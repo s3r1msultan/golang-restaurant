@@ -66,6 +66,17 @@
         </div>
     </nav>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const signOutButton = document.getElementById('sign_out');
+            signOutButton.addEventListener('click', function() {
+                logout();
+            });
+        });
+
+        function logout() {
+            document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            window.location.href = '/';
+        }
 
     </script>
 </header>

@@ -1516,3 +1516,124 @@ time="2024-03-01T18:34:51+06:00" level=info msg="handled request" duration=172.4
 time="2024-03-01T18:34:51+06:00" level=info msg="handled request" duration=860.5723ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:52728" status=200
 time="2024-03-01T18:52:25+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
 time="2024-03-01T18:52:25+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:01:11+06:00" level=info msg="handled request" duration=6.9208ms method=GET path=/auth/ remoteAddr="127.0.0.1:53421" status=200
+time="2024-03-01T19:01:11+06:00" level=info msg="handled request" duration=102.9863ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:53422" status=200
+time="2024-03-01T19:01:11+06:00" level=info msg="handled request" duration=103.9817ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:53421" status=200
+time="2024-03-01T19:01:11+06:00" level=info msg="handled request" duration=2.3208ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53421" status=200
+time="2024-03-01T19:01:57+06:00" level=info msg="handled request" duration=2.0657112s method=POST path=/auth/sign_up remoteAddr="127.0.0.1:53421" status=201
+time="2024-03-01T19:03:23+06:00" level=info msg="handled request" duration=2.7851ms method=GET path=/admin/ remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:24+06:00" level=info msg="handled request" duration=1.0263591s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:24+06:00" level=info msg="handled request" duration=4.5371ms method=GET path=/admin/ remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:25+06:00" level=info msg="handled request" duration=528.2784ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:32+06:00" level=info msg="handled request" duration=7.1677ms method=GET path=/ remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:33+06:00" level=info msg="handled request" duration=100.0156ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:33+06:00" level=info msg="handled request" duration=0s method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53495" status=200
+time="2024-03-01T19:03:35+06:00" level=info msg="handled request" duration=2.3249ms method=GET path=/auth/ remoteAddr="127.0.0.1:53507" status=200
+time="2024-03-01T19:03:48+06:00" level=info msg="handled request" duration=277.5512ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53507" status=200
+time="2024-03-01T19:04:40+06:00" level=info msg="handled request" duration="704µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53507" status=200
+time="2024-03-01T19:04:42+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:04:42+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:04:43+06:00" level=info msg="handled request" duration=285.8775ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53530" status=200
+time="2024-03-01T19:04:50+06:00" level=info msg="handled request" duration=3.4952ms method=GET path=/auth/ remoteAddr="127.0.0.1:53549" status=200
+time="2024-03-01T19:04:53+06:00" level=info msg="handled request" duration=265.8947ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53549" status=200
+time="2024-03-01T19:04:53+06:00" level=info msg="handled request" duration=4.7113ms method=GET path=/admin/ remoteAddr="127.0.0.1:53549" status=200
+time="2024-03-01T19:04:54+06:00" level=info msg="handled request" duration=1.0586338s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53549" status=200
+time="2024-03-01T19:04:59+06:00" level=info msg="handled request" duration=174.0933ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53549" status=200
+time="2024-03-01T19:05:05+06:00" level=info msg="handled request" duration=0s method=PUT path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53549" status=400
+time="2024-03-01T19:05:23+06:00" level=info msg="handled request" duration=0s method=PUT path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53549" status=400
+time="2024-03-01T19:05:25+06:00" level=info msg="handled request" duration=3.2653ms method=GET path=/admin/ remoteAddr="127.0.0.1:53561" status=200
+time="2024-03-01T19:05:27+06:00" level=info msg="handled request" duration=0s method=PUT path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53549" status=400
+time="2024-03-01T19:10:23+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:10:23+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:11:12+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:11:12+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:12:21+06:00" level=info msg="handled request" duration=11.5902ms method=GET path=/admin/ remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:12:23+06:00" level=info msg="handled request" duration=1.0486457s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:12:25+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53707" status=400
+time="2024-03-01T19:12:25+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53707" status=400
+time="2024-03-01T19:12:27+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53707" status=400
+time="2024-03-01T19:12:51+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c5 remoteAddr="127.0.0.1:53707" status=400
+time="2024-03-01T19:12:55+06:00" level=info msg="handled request" duration=5.3754ms method=GET path=/admin/ remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:12:57+06:00" level=info msg="handled request" duration=1.0455193s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:12:57+06:00" level=info msg="handled request" duration=5.1458ms method=GET path=/auth/ remoteAddr="127.0.0.1:53714" status=200
+time="2024-03-01T19:12:57+06:00" level=info msg="handled request" duration=107.7575ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:13:04+06:00" level=info msg="handled request" duration=278.0883ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:13:04+06:00" level=info msg="handled request" duration=0s method=GET path=/admin remoteAddr="127.0.0.1:53707" status=301
+time="2024-03-01T19:13:04+06:00" level=info msg="handled request" duration=5.2053ms method=GET path=/admin/ remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:13:06+06:00" level=info msg="handled request" duration=1.0465931s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:13:07+06:00" level=info msg="handled request" duration=1.0002ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53707" status=400
+time="2024-03-01T19:14:03+06:00" level=info msg="handled request" duration=3.2332ms method=GET path=/admin/ remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:14:04+06:00" level=info msg="handled request" duration=1.0461051s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:14:06+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90ca remoteAddr="127.0.0.1:53707" status=400
+time="2024-03-01T19:14:50+06:00" level=info msg="handled request" duration=2.5738ms method=GET path=/admin/ remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:14:50+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:14:50+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:14:51+06:00" level=info msg="handled request" duration=1.0554741s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53707" status=200
+time="2024-03-01T19:15:31+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:15:31+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:16:18+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53800" status=400
+time="2024-03-01T19:16:20+06:00" level=info msg="handled request" duration=3.0215ms method=GET path=/admin/ remoteAddr="127.0.0.1:53800" status=200
+time="2024-03-01T19:16:20+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:16:20+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:16:21+06:00" level=info msg="handled request" duration=1.0381958s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53800" status=200
+time="2024-03-01T19:16:57+06:00" level=info msg="handled request" duration=6.0971ms method=GET path=/auth/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:16:57+06:00" level=info msg="handled request" duration=108.3552ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:16:57+06:00" level=info msg="handled request" duration="582.7µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:16:57+06:00" level=info msg="handled request" duration="392.3µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:24+06:00" level=info msg="handled request" duration=537.8733ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:25+06:00" level=info msg="handled request" duration="964.9µs" method=GET path=/menu remoteAddr="127.0.0.1:53854" status=301
+time="2024-03-01T19:17:25+06:00" level=info msg="handled request" duration=177.6564ms method=GET path=/menu/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:25+06:00" level=info msg="handled request" duration=1.086ms method=GET path=/static/css/MenuStyle.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:25+06:00" level=info msg="handled request" duration="609.2µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:26+06:00" level=info msg="handled request" duration="236.2µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:27+06:00" level=info msg="handled request" duration=2.9165ms method=GET path=/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:28+06:00" level=info msg="handled request" duration="145µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:28+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:17:28+06:00" level=info msg="handled request" duration="87.1µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:30+06:00" level=info msg="handled request" duration=0s method=GET path=/auth remoteAddr="127.0.0.1:53854" status=301
+time="2024-03-01T19:17:30+06:00" level=info msg="handled request" duration=7.0175ms method=GET path=/auth/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:30+06:00" level=info msg="handled request" duration="129.2µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:30+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:17:30+06:00" level=info msg="handled request" duration=1.008ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:35+06:00" level=info msg="handled request" duration=570.1786ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:35+06:00" level=info msg="handled request" duration=0s method=GET path=/menu remoteAddr="127.0.0.1:53854" status=301
+time="2024-03-01T19:17:35+06:00" level=info msg="handled request" duration=176.5416ms method=GET path=/menu/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:35+06:00" level=info msg="handled request" duration=1.4828ms method=GET path=/static/css/MenuStyle.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:35+06:00" level=info msg="handled request" duration="99.8µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:17:35+06:00" level=info msg="handled request" duration="939.5µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:44+06:00" level=info msg="handled request" duration=3.3156ms method=GET path=/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:46+06:00" level=info msg="handled request" duration=178.0051ms method=GET path=/menu/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:47+06:00" level=info msg="handled request" duration=3.0594ms method=GET path=/support/ remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:48+06:00" level=info msg="handled request" duration=2.7812ms method=GET path=/profile/delivery remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:48+06:00" level=info msg="handled request" duration="200.8µs" method=GET path=/static/css/DeliveryStyle.css remoteAddr="127.0.0.1:53854" status=404
+time="2024-03-01T19:17:50+06:00" level=info msg="handled request" duration=2.7372ms method=GET path=/profile/orders remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:50+06:00" level=info msg="handled request" duration=1.4469ms method=GET path=/static/css/OrdersStyle.css remoteAddr="127.0.0.1:53854" status=200
+time="2024-03-01T19:17:54+06:00" level=info msg="handled request" duration=4.0139ms method=GET path=/profile/cart/ remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:17:54+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/CartStyle.css remoteAddr="127.0.0.1:53875" status=404
+time="2024-03-01T19:18:00+06:00" level=info msg="handled request" duration=0s method=GET path=/profile remoteAddr="127.0.0.1:53875" status=301
+time="2024-03-01T19:18:00+06:00" level=info msg="handled request" duration=171.8547ms method=GET path=/profile/ remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:00+06:00" level=info msg="handled request" duration="930.3µs" method=GET path=/static/css/ProfileStyle.css remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:18+06:00" level=info msg="handled request" duration=4.8751ms method=GET path=/ remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:19+06:00" level=info msg="handled request" duration=3.199ms method=GET path=/auth/ remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:27+06:00" level=info msg="handled request" duration=285.1422ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:27+06:00" level=info msg="handled request" duration=4.8243ms method=GET path=/admin/ remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:28+06:00" level=info msg="handled request" duration=1.0333379s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:29+06:00" level=info msg="handled request" duration=2.7395ms method=GET path=/ remoteAddr="127.0.0.1:53875" status=200
+time="2024-03-01T19:18:30+06:00" level=info msg="handled request" duration=0s method=GET path=/auth remoteAddr="127.0.0.1:53875" status=301
+time="2024-03-01T19:18:30+06:00" level=info msg="handled request" duration=3.8429ms method=GET path=/auth/ remoteAddr="127.0.0.1:53900" status=200
+time="2024-03-01T19:18:36+06:00" level=info msg="handled request" duration=275.4984ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:53900" status=200
+time="2024-03-01T19:18:37+06:00" level=info msg="handled request" duration=5.555ms method=GET path=/admin/ remoteAddr="127.0.0.1:53900" status=200
+time="2024-03-01T19:18:38+06:00" level=info msg="handled request" duration=1.0268332s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53900" status=200
+time="2024-03-01T19:18:39+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53900" status=400
+time="2024-03-01T19:18:41+06:00" level=info msg="handled request" duration=5.073ms method=GET path=/admin/ remoteAddr="127.0.0.1:53906" status=200
+time="2024-03-01T19:18:55+06:00" level=info msg="handled request" duration=0s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53900" status=400
+time="2024-03-01T19:19:38+06:00" level=info msg="handled request" duration=3.0415ms method=GET path=/admin/ remoteAddr="127.0.0.1:53900" status=200
+time="2024-03-01T19:19:39+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:19:39+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:19:40+06:00" level=info msg="handled request" duration=1.0288588s method=GET path=/admin/api/users remoteAddr="127.0.0.1:53900" status=200
+time="2024-03-01T19:19:46+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:19:46+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:19:53+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T19:19:53+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-01T19:23:05+06:00" level=info msg="handled request" duration=2m56.8427824s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53994" status=400
+time="2024-03-01T19:23:05+06:00" level=info msg="handled request" duration=5.6484ms method=GET path=/admin/ remoteAddr="127.0.0.1:54034" status=200

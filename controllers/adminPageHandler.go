@@ -105,7 +105,6 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 			"last_name":    updateUser.LastName,
 			"email":        updateUser.Email,
 			"phone_number": updateUser.PhoneNumber,
-			// Update other fields but exclude sensitive ones like password, unless intended
 		},
 	}
 

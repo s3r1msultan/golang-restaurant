@@ -199,7 +199,7 @@
                 if(data.token) {
                     document.cookie = `token=${data.token};path=/;SameSite=Strict;`;
                     if(data.isAdmin) {
-                        window.location.href = "/admin/users";
+                        window.location.href = "/admin";
                     } else {
                         window.location.href = "/menu";
                     }
