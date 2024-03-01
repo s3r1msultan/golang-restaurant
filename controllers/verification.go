@@ -12,6 +12,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"net/http"
 	"net/smtp"
+	"net/url"
 	"os"
 )
 
@@ -23,7 +24,7 @@ func GenerateToken() (string, error) {
 	return hex.EncodeToString(bytes), nil
 }
 
-func SendVerificationEmail(to, token string) error {
+func SendVerificationEmail(to, token string, r *http.Request) error {
 	from := os.Getenv("SMTP_EMAIL")
 	password := os.Getenv("SMTP_PASSWORD")
 
@@ -31,10 +32,17 @@ func SendVerificationEmail(to, token string) error {
 	smtpPort := os.Getenv("SMTP_PORT")
 	auth := smtp.PlainAuth("", from, password, smtpHost)
 
-	verificationURL := "http://localhost:3000/verify?token=" + token
+	var scheme string
+	if r.TLS != nil {
+		scheme = "https"
+	} else {
+		scheme = "http"
+	}
+	verificationURL := scheme + "://" + r.Host + "/verify?token=" + token
+	encodedURL := url.QueryEscape(verificationURL)
 	message := []byte("To: " + to + "\r\n" +
 		"Subject: Verify your email address\r\n\r\n" +
-		"Click the link to verify your email address: " + verificationURL)
+		"Click the link to verify your email address: " + encodedURL)
 
 	return smtp.SendMail(smtpHost+":"+smtpPort, auth, from, []string{to}, message)
 }
