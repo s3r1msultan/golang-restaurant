@@ -1637,3 +1637,11 @@ time="2024-03-01T19:19:53+06:00" level=error msg="An error occurred" action="sta
 time="2024-03-01T19:19:53+06:00" level=info msg="Listening to port: :3000"
 time="2024-03-01T19:23:05+06:00" level=info msg="handled request" duration=2m56.8427824s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:53994" status=400
 time="2024-03-01T19:23:05+06:00" level=info msg="handled request" duration=5.6484ms method=GET path=/admin/ remoteAddr="127.0.0.1:54034" status=200
+time="2024-03-01T19:23:26+06:00" level=info msg="handled request" duration=6.1745ms method=GET path=/auth/ remoteAddr="127.0.0.1:54073" status=200
+time="2024-03-01T19:23:26+06:00" level=info msg="handled request" duration=129.7368ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:54074" status=200
+time="2024-03-01T19:23:27+06:00" level=info msg="handled request" duration=325.8147ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:54074" status=200
+time="2024-03-01T19:23:28+06:00" level=info msg="handled request" duration="555.9µs" method=GET path=/admin remoteAddr="127.0.0.1:54074" status=301
+time="2024-03-01T19:23:28+06:00" level=info msg="handled request" duration=4.5579ms method=GET path=/admin/ remoteAddr="127.0.0.1:54074" status=200
+time="2024-03-01T19:23:29+06:00" level=info msg="handled request" duration=1.0589759s method=GET path=/admin/api/users remoteAddr="127.0.0.1:54074" status=200
+time="2024-03-01T19:26:03+06:00" level=info msg="handled request" duration=2m31.1193026s method=GET path=/admin/api/users/65dcece311ed10bf200c90c1 remoteAddr="127.0.0.1:54074" status=400
+time="2024-03-01T19:26:03+06:00" level=info msg="handled request" duration=4.5372ms method=GET path=/admin/ remoteAddr="127.0.0.1:54102" status=200

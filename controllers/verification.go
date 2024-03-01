@@ -30,14 +30,7 @@ func SendVerificationEmail(to, token string, r *http.Request) error {
 	smtpHost := os.Getenv("SMTP_HOST")
 	smtpPort := os.Getenv("SMTP_PORT")
 	auth := smtp.PlainAuth("", from, password, smtpHost)
-
-	var scheme string
-	if r.TLS != nil {
-		scheme = "https"
-	} else {
-		scheme = "http"
-	}
-	verificationURL := scheme + "://" + r.Host + "/verify?token=" + token
+	verificationURL := "https://golang-restaurant.onrender.com" + "/verify?token=" + token
 	message := []byte("To: " + to + "\r\n" +
 		"Subject: Verify your email address\r\n\r\n" +
 		"Click the link to verify your email address: " + verificationURL)
