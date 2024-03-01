@@ -87,7 +87,7 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = SendVerificationEmail(user.Email, token)
+	err = SendVerificationEmail(user.Email, token, r)
 	if err != nil {
 		initializers.LogError("sending verification email", err, nil)
 		w.WriteHeader(http.StatusInternalServerError)

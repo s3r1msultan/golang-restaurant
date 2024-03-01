@@ -1514,3 +1514,5 @@ time="2024-03-01T18:34:43+06:00" level=info msg="handled request" duration=172.0
 time="2024-03-01T18:34:44+06:00" level=info msg="handled request" duration=867.6466ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:52728" status=200
 time="2024-03-01T18:34:51+06:00" level=info msg="handled request" duration=172.4006ms method=DELETE path=/admin/api/users/65dcece311ed10bf200c90c0 remoteAddr="127.0.0.1:52728" status=200
 time="2024-03-01T18:34:51+06:00" level=info msg="handled request" duration=860.5723ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:52728" status=200
+time="2024-03-01T18:52:25+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-01T18:52:25+06:00" level=info msg="Listening to port: :3000"
