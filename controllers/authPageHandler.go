@@ -49,16 +49,16 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		initializers.LogError("decoding json while signing up", err, nil)
 		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(bson.M{"error": "Invalid request body", "is_signed_up": false})
 		return
 	}
 
-	// Check if the user already exists
 	usersCollection := db.GetUsersCollection()
 	var existingUser models.User
 	err = usersCollection.FindOne(context.TODO(), bson.M{"email": user.Email}).Decode(&existingUser)
 	if err == nil {
-		// User exists
 		http.Error(w, "A user with this email already exists", http.StatusBadRequest)
+		json.NewEncoder(w).Encode(bson.M{"error": "A user with this email already exists", "is_signed_up": false})
 		return
 	}
 
@@ -66,6 +66,7 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		initializers.LogError("generating hash password when signing up", err, nil)
 		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(bson.M{"error": "Failed to generate password hash", "is_signed_up": false})
 		return
 	}
 	user.Password = string(hashedPassword)
@@ -74,6 +75,7 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 	token, err := GenerateToken()
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(bson.M{"error": "Failed to generate verification token", "is_signed_up": false})
 		return
 	}
 
@@ -84,17 +86,20 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		initializers.LogError("creating new user while signing up", err, nil)
 		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(bson.M{"error": "Failed to create user", "is_signed_up": false})
 		return
 	}
 
-	err = SendVerificationEmail(user.Email, token, r)
+	err = SendVerificationEmail(user.Email, token)
 	if err != nil {
 		initializers.LogError("sending verification email", err, nil)
 		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(bson.M{"error": "Failed to send verification email", "is_signed_up": false})
 		return
 	}
 
 	w.WriteHeader(http.StatusCreated)
+	json.NewEncoder(w).Encode(bson.M{"message": "Signup successful. Please verify your email.", "is_signed_up": true})
 }
 
 func SigninHandler(w http.ResponseWriter, r *http.Request) {

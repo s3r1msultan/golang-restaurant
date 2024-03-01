@@ -1,59 +1,57 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link text-black fs-5" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/menu">Menu</a>
-                    </li>
-
                     {{if .ProfileID }}
-
-                    {{if ne .CurrentSite "Support" }}
                     <li class="nav-item">
-                        <a class="nav-link" href="/support">Contact Support</a>
+                        <a class="nav-link text-black fs-5" href="/menu">Menu</a>
                     </li>
-                    {{end}}
 
-                    {{if .CurrentSite}}
-                    {{if ne .CurrentSite "Orders" }}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/profile/orders">Order History</a>
-                    </li>
-                    {{end}}
+                        {{if .CurrentSite}}
 
-                    {{if ne .CurrentSite "Delivery" }}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/profile/delivery">Delivery Address</a>
-                    </li>
-                    {{end}}
+                            {{if ne .CurrentSite "Support" }}
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-5" href="/support">Contact Support</a>
+                            </li>
+                            {{end}}
 
-                    {{if ne .CurrentSite "Cart" }}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/profile/cart">Cart</a>
-                    </li>
-                    {{end}}
-                    {{end}}
+                            {{if ne .CurrentSite "Orders" }}
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-5" href="/profile/orders">Order History</a>
+                            </li>
+                            {{end}}
 
+                            {{if ne .CurrentSite "Delivery" }}
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-5" href="/profile/delivery">Delivery Address</a>
+                            </li>
+                            {{end}}
+
+                            {{if ne .CurrentSite "Cart" }}
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-5" href="/profile/cart">Cart</a>
+                            </li>
+                            {{end}}
+
+                        {{end}}
                     {{end}}
-
-
                 </ul>
             </div>
-
             {{if .ProfileID }}
             <div id="profile">
-                <div class="d-flex align-items-center justify-content-center gap-3" >
+                <div class="d-flex align-items-center justify-content-center">
                     {{if ne .CurrentSite "Profile" }}
-                    <a class="nav-link" href="/profile">My Profile</a>
+                    <a class="nav-link text-black fs-5" href="/profile">My Profile</a>
                     {{end}}
-                    <a id="sign_out" class="btn btn-primary text-white">Sign Out</a>
+                    <button id="sign_out" class="btn btn-outline-primary text-white">Sign Out</button>
                 </div>
             </div>
             {{else}}
@@ -61,8 +59,6 @@
                 <a class="btn btn-primary text-white" href="/auth">Sign in/Log in</a>
             </div>
             {{end}}
-
-
         </div>
     </nav>
     <script>

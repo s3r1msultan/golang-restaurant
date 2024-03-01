@@ -3,14 +3,14 @@ footer.footer {
     color: #fff;
 }
 footer.footer h3 {
-    color: #ffd700;
+    color: black;
 }
 footer.footer a {
-    color: #f8f9fa;
+    color: black;
 }
 footer.footer a:hover {
-    color: #ffd700;
+    color: black;
 }
 .text-muted {
-    color: #6c757d !important;
+    color: black;
 }

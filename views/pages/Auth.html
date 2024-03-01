@@ -60,6 +60,7 @@
                     <div class="btn-layer"></div>
                     <input type="submit" value="Signup" id="signup-button" />
                 </div>
+                <div id="signupFeedback" class="alert" style="display:none;"></div>
             </form>
         </div>
     </div>
@@ -213,7 +214,10 @@
     });
 
     document.getElementById("sign_up").addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault();
+
+        const feedbackElement = document.getElementById("signupFeedback");
+        feedbackElement.style.display = "none";
 
         const formData = new FormData(this);
         const data = Object.fromEntries(formData.entries());
@@ -225,25 +229,28 @@
             },
             body: JSON.stringify(data),
         })
-            .then(response => {
-                if(response.status === 400) {
-                    alert("A user with this email already exists. Please use a different email.");
-                    return null;
-                } else if(response.ok) {
-                    return response.json();
-                } else {
-                    throw new Error('Something went wrong with the signup process.');
-                }
-            })
+            .then(response => response.json())
             .then(data => {
-                if(data) {
-                    alert("Signup successful. Check your email and verify your account", data);
+                if(data.is_signed_up) {
+                    feedbackElement.textContent = data.message || "Signup successful. Please check your email to verify.";
+                    feedbackElement.classList.add("alert-success");
+                    feedbackElement.classList.remove("alert-danger");
+                } else {
+                    feedbackElement.textContent = data.error || "Signup failed. Please try again.";
+                    feedbackElement.classList.add("alert-danger");
+                    feedbackElement.classList.remove("alert-success");
                 }
+                feedbackElement.style.display = "block";
             })
             .catch(error => {
                 console.error('Error:', error);
-            });
-    });
+                feedbackElement.textContent = "An error occurred. Please try again later.";
+                feedbackElement.classList.add("alert-danger");
+                feedbackElement.classList.remove("alert-success");
+                feedbackElement.style.display = "block";
+    })
+    })
+
 
 </script>
 </body>

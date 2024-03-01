@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"final/db"
+	"final/initializers"
 	"final/models"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -14,10 +15,56 @@ import (
 	"time"
 )
 
+type notifyInfo struct {
+	Email string `bson:"email" json:"email"`
+}
+
+func NofityUsers(w http.ResponseWriter, r *http.Request) {
+	if err := r.ParseForm(); err != nil {
+		initializers.LogError("parsing data from form", err, nil)
+		json.NewEncoder(w).Encode(bson.M{"is_sent": false})
+
+		w.WriteHeader(http.StatusBadRequest)
+	}
+
+	message := r.FormValue("message")
+	subject := r.FormValue("subject")
+
+	filter := bson.M{
+		"email_verified": true,
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+	cursor, err := db.GetUsersCollection().Find(ctx, filter)
+	if err != nil {
+		initializers.LogError("getting all users", err, nil)
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(bson.M{"is_sent": false})
+
+	}
+	var i uint16 = 0
+	var info notifyInfo
+	for cursor.Next(ctx) {
+		err := cursor.Decode(&info)
+		if err != nil {
+			initializers.LogError("trying to decode user from cursor", err, nil)
+			continue
+		}
+		err = SendMessage(info.Email, subject, message)
+		if err != nil {
+			initializers.LogError("trying to send message to"+info.Email, err, nil)
+		}
+		i++
+		fmt.Println(i)
+	}
+
+	w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(bson.M{"is_sent": true})
+}
+
 func GetUser(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	fmt.Println(vars)
-	userID, err := primitive.ObjectIDFromHex(vars["identification"])
+	userID, err := primitive.ObjectIDFromHex(vars["id"])
 	if err != nil {
 		http.Error(w, "Invalid user ID", http.StatusBadRequest)
 		return
@@ -90,29 +137,18 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Invalid user ID", http.StatusBadRequest)
 		return
 	}
-
 	var updateUser models.User
-	if err := r.ParseForm(); err != nil {
-		http.Error(w, "Failed to parse form data", http.StatusBadRequest)
+	err = json.NewDecoder(r.Body).Decode(&updateUser)
+	if err != nil {
+		http.Error(w, "Failed to parse json data", http.StatusBadRequest)
 		return
 	}
-	updateUser.FirstName = r.FormValue("first_name")
-	updateUser.LastName = r.FormValue("last_name")
-	updateUser.Email = r.FormValue("email")
-	updateUser.PhoneNumber = r.FormValue("phone_number")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
 	filter := bson.M{"_id": userId}
-	update := bson.M{
-		"$set": bson.M{
-			"first_name":   updateUser.FirstName,
-			"last_name":    updateUser.LastName,
-			"email":        updateUser.Email,
-			"phone_number": updateUser.PhoneNumber,
-		},
-	}
+	update := bson.M{"$set": updateUser}
 
 	_, err = db.GetUsersCollection().UpdateOne(ctx, filter, update)
 	if err != nil {
@@ -147,10 +183,7 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 
 func AdminPageHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl := initTemplates()
-	data := models.PageData{}
-
-	err := tmpl.ExecuteTemplate(w, "Admin.html", data)
-
+	err := tmpl.ExecuteTemplate(w, "Admin.html", nil)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}

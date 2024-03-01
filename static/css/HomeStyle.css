@@ -56,18 +56,7 @@ body {
     border-radius: 5px;
 }
 
-.btn-primary {
-    background-color: #0a53be;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.btn-primary:hover {
-    background-color: #003d89;
-}
 .reviews p {
     font-style: italic;
     color: #666;

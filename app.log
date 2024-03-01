@@ -1872,3 +1872,374 @@ time="2024-03-01T20:27:33+06:00" level=info msg="handled request" duration=863.8
 time="2024-03-01T20:29:14+06:00" level=info msg="handled request" duration=171.0488ms method=GET path=/admin/api/users/65dcece311ed10bf200c9104 remoteAddr="127.0.0.1:55315" status=200
 time="2024-03-01T20:29:15+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
 time="2024-03-01T20:29:15+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T00:51:50+06:00" level=info msg="handled request" duration=7.9282ms method=GET path=/ remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:51:50+06:00" level=info msg="handled request" duration=109.2208ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:51:50+06:00" level=info msg="handled request" duration="146.6µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:51:51+06:00" level=info msg="handled request" duration="645.2µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:51:52+06:00" level=info msg="handled request" duration=4.0366ms method=GET path=/auth/ remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:51:52+06:00" level=info msg="handled request" duration=1.3266ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:52:01+06:00" level=info msg="handled request" duration=266.2426ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:52:01+06:00" level=info msg="handled request" duration=3.661ms method=GET path=/admin/ remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:52:03+06:00" level=info msg="handled request" duration=1.0264685s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:52:04+06:00" level=info msg="handled request" duration=170.3983ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c5 remoteAddr="127.0.0.1:59248" status=200
+time="2024-03-02T00:57:43+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T00:57:43+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T00:59:54+06:00" level=info msg="handled request" duration=5.0003ms method=GET path=/admin/ remoteAddr="127.0.0.1:59339" status=200
+time="2024-03-02T00:59:56+06:00" level=info msg="handled request" duration=1.0299694s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59339" status=200
+time="2024-03-02T00:59:56+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T00:59:56+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T00:59:57+06:00" level=info msg="handled request" duration=168.2897ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c5 remoteAddr="127.0.0.1:59339" status=200
+time="2024-03-02T01:02:51+06:00" level=info msg="handled request" duration=2.8659ms method=GET path=/admin/ remoteAddr="127.0.0.1:59409" status=200
+time="2024-03-02T01:02:53+06:00" level=info msg="handled request" duration=1.042245s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59409" status=200
+time="2024-03-02T01:02:54+06:00" level=info msg="handled request" duration=171.8595ms method=GET path=/admin/api/users/65dcece311ed10bf200c90d7 remoteAddr="127.0.0.1:59409" status=200
+time="2024-03-02T01:03:04+06:00" level=info msg="handled request" duration=172.5337ms method=GET path=/admin/api/users/65dcece311ed10bf200c90e7 remoteAddr="127.0.0.1:59409" status=200
+time="2024-03-02T01:03:16+06:00" level=info msg="handled request" duration=170.9133ms method=GET path=/admin/api/users/65dcece311ed10bf200c90f6 remoteAddr="127.0.0.1:59409" status=200
+time="2024-03-02T01:08:57+06:00" level=info msg="handled request" duration=170.1825ms method=GET path=/admin/api/users/65dcece311ed10bf200c90f7 remoteAddr="127.0.0.1:59460" status=200
+time="2024-03-02T01:11:58+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:11:58+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:17:30+06:00" level=info msg="handled request" duration=4.4163ms method=GET path=/admin/ remoteAddr="127.0.0.1:59544" status=200
+time="2024-03-02T01:17:32+06:00" level=info msg="handled request" duration=1.0237743s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59544" status=200
+time="2024-03-02T01:17:33+06:00" level=info msg="handled request" duration=168.2447ms method=GET path=/admin/api/users/65dcece311ed10bf200c90d2 remoteAddr="127.0.0.1:59544" status=200
+time="2024-03-02T01:18:16+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:18:16+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:20:48+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:20:48+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:21:14+06:00" level=info msg="handled request" duration=5.4086ms method=GET path=/admin/ remoteAddr="127.0.0.1:59646" status=200
+time="2024-03-02T01:21:16+06:00" level=info msg="handled request" duration=1.0237576s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59646" status=200
+time="2024-03-02T01:21:18+06:00" level=info msg="handled request" duration=173.5203ms method=GET path=/admin/api/users/65dcece311ed10bf200c90e1 remoteAddr="127.0.0.1:59646" status=200
+time="2024-03-02T01:21:20+06:00" level=info msg="handled request" duration="894.5µs" method=PUT path=/admin/api/users/65dcece311ed10bf200c90e1 remoteAddr="127.0.0.1:59646" status=400
+time="2024-03-02T01:22:14+06:00" level=info msg="handled request" duration="524.5µs" method=PUT path=/admin/api/users/65dcece311ed10bf200c90e1 remoteAddr="127.0.0.1:59646" status=400
+time="2024-03-02T01:22:15+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:22:15+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:27:16+06:00" level=info msg="handled request" duration="556.1µs" method=PUT path=/admin/api/users/65dcece311ed10bf200c90e1 remoteAddr="127.0.0.1:59734" status=400
+time="2024-03-02T01:28:37+06:00" level=info msg="handled request" duration="617.2µs" method=PUT path=/admin/api/users/65dcece311ed10bf200c90e1 remoteAddr="127.0.0.1:59734" status=400
+time="2024-03-02T01:28:38+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:28:38+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:28:46+06:00" level=info msg="handled request" duration=6.6839ms method=GET path=/admin/ remoteAddr="127.0.0.1:59769" status=200
+time="2024-03-02T01:28:48+06:00" level=info msg="handled request" duration=1.0236629s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59769" status=200
+time="2024-03-02T01:28:50+06:00" level=info msg="handled request" duration=170.174ms method=GET path=/admin/api/users/65dcece311ed10bf200c90e7 remoteAddr="127.0.0.1:59769" status=200
+time="2024-03-02T01:29:20+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:29:20+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:29:21+06:00" level=info msg="handled request" duration=3.0016ms method=GET path=/admin/ remoteAddr="127.0.0.1:59769" status=200
+time="2024-03-02T01:29:22+06:00" level=info msg="handled request" duration=1.0271081s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59769" status=200
+time="2024-03-02T01:29:43+06:00" level=info msg="handled request" duration=4.9979ms method=GET path=/admin/ remoteAddr="127.0.0.1:59811" status=200
+time="2024-03-02T01:29:44+06:00" level=info msg="handled request" duration=1.0222161s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59811" status=200
+time="2024-03-02T01:29:46+06:00" level=info msg="handled request" duration=168.7927ms method=GET path=/admin/api/users/65dcece311ed10bf200c90e7 remoteAddr="127.0.0.1:59811" status=200
+time="2024-03-02T01:30:00+06:00" level=info msg="handled request" duration=3.3309ms method=GET path=/admin/ remoteAddr="127.0.0.1:59811" status=200
+time="2024-03-02T01:30:01+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:30:01+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:30:01+06:00" level=info msg="handled request" duration=1.0322968s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59811" status=200
+time="2024-03-02T01:30:21+06:00" level=info msg="handled request" duration=2.9006ms method=GET path=/admin/ remoteAddr="127.0.0.1:59864" status=200
+time="2024-03-02T01:30:21+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:30:21+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:30:22+06:00" level=info msg="handled request" duration=1.0315111s method=GET path=/admin/api/users remoteAddr="127.0.0.1:59864" status=200
+time="2024-03-02T01:30:56+06:00" level=info msg="handled request" duration=3.1322ms method=GET path=/admin/ remoteAddr="[::1]:59900" status=200
+time="2024-03-02T01:30:57+06:00" level=info msg="handled request" duration=1.0270779s method=GET path=/admin/api/users remoteAddr="[::1]:59900" status=200
+time="2024-03-02T01:30:59+06:00" level=info msg="handled request" duration=170.5805ms method=GET path=/admin/api/users/65dcece311ed10bf200c90e8 remoteAddr="[::1]:59900" status=200
+time="2024-03-02T01:31:31+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:31:31+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:31:31+06:00" level=info msg="handled request" duration=2.0011ms method=GET path=/admin/ remoteAddr="[::1]:59900" status=200
+time="2024-03-02T01:31:33+06:00" level=info msg="handled request" duration=1.0237653s method=GET path=/admin/api/users remoteAddr="[::1]:59900" status=200
+time="2024-03-02T01:31:41+06:00" level=info msg="handled request" duration=2.6057ms method=GET path=/admin/ remoteAddr="[::1]:59945" status=200
+time="2024-03-02T01:31:42+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:31:42+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:31:43+06:00" level=info msg="handled request" duration=1.0310408s method=GET path=/admin/api/users remoteAddr="[::1]:59945" status=200
+time="2024-03-02T01:31:58+06:00" level=info msg="handled request" duration=5.4661ms method=GET path=/admin/ remoteAddr="[::1]:59960" status=200
+time="2024-03-02T01:32:00+06:00" level=info msg="handled request" duration=1.0453061s method=GET path=/admin/api/users remoteAddr="[::1]:59960" status=200
+time="2024-03-02T01:32:01+06:00" level=info msg="handled request" duration=171.2776ms method=GET path=/admin/api/users/65dcece311ed10bf200c90e7 remoteAddr="[::1]:59960" status=200
+time="2024-03-02T01:32:17+06:00" level=info msg="handled request" duration=3.8553ms method=GET path=/auth/ remoteAddr="127.0.0.1:59966" status=200
+time="2024-03-02T01:32:17+06:00" level=info msg="handled request" duration=98.1205ms method=GET path=/static/img/favicon.png remoteAddr="[::1]:59960" status=200
+time="2024-03-02T01:32:19+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:32:19+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:32:20+06:00" level=info msg="handled request" duration=2.8754ms method=GET path=/admin/ remoteAddr="[::1]:59960" status=200
+time="2024-03-02T01:32:34+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:32:34+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:32:35+06:00" level=info msg="handled request" duration=2.7284ms method=GET path=/admin/ remoteAddr="127.0.0.1:60008" status=200
+time="2024-03-02T01:32:36+06:00" level=info msg="handled request" duration=1.0384943s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60008" status=200
+time="2024-03-02T01:32:52+06:00" level=info msg="handled request" duration=6.0308ms method=GET path=/admin/ remoteAddr="127.0.0.1:60026" status=200
+time="2024-03-02T01:32:54+06:00" level=info msg="handled request" duration=1.0368821s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60026" status=200
+time="2024-03-02T01:32:55+06:00" level=info msg="handled request" duration=170.8015ms method=GET path=/admin/api/users/65dcece311ed10bf200c90d2 remoteAddr="127.0.0.1:60026" status=200
+time="2024-03-02T01:34:01+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:34:01+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:34:12+06:00" level=info msg="handled request" duration=5.3437ms method=GET path=/admin/ remoteAddr="127.0.0.1:60072" status=200
+time="2024-03-02T01:34:14+06:00" level=info msg="handled request" duration=1.0375893s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60072" status=200
+time="2024-03-02T01:34:16+06:00" level=info msg="handled request" duration=170.484ms method=GET path=/admin/api/users/65dcece311ed10bf200c90d7 remoteAddr="127.0.0.1:60072" status=200
+time="2024-03-02T01:34:41+06:00" level=info msg="handled request" duration=2.9981ms method=GET path=/admin/ remoteAddr="127.0.0.1:60072" status=200
+time="2024-03-02T01:34:41+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:34:41+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:34:42+06:00" level=info msg="handled request" duration=1.0345499s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60072" status=200
+time="2024-03-02T01:34:53+06:00" level=info msg="handled request" duration=6.0527ms method=GET path=/admin/ remoteAddr="127.0.0.1:60103" status=200
+time="2024-03-02T01:34:55+06:00" level=info msg="handled request" duration=1.0166957s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60103" status=200
+time="2024-03-02T01:34:56+06:00" level=info msg="handled request" duration=166.9397ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c5 remoteAddr="127.0.0.1:60103" status=200
+time="2024-03-02T01:35:44+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:35:44+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:35:59+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:35:59+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:40:12+06:00" level=info msg="handled request" duration=3.2352ms method=GET path=/admin/ remoteAddr="127.0.0.1:60235" status=200
+time="2024-03-02T01:40:13+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:40:13+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:40:26+06:00" level=info msg="handled request" duration=2.9641ms method=GET path=/admin/ remoteAddr="127.0.0.1:60269" status=200
+time="2024-03-02T01:40:26+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:40:26+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:40:27+06:00" level=info msg="handled request" duration=1.0336518s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60269" status=200
+time="2024-03-02T01:40:44+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:40:44+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:40:45+06:00" level=info msg="handled request" duration=167.9426ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c5 remoteAddr="127.0.0.1:60297" status=200
+time="2024-03-02T01:41:31+06:00" level=info msg="handled request" duration=5.8815ms method=GET path=/admin/ remoteAddr="127.0.0.1:60315" status=200
+time="2024-03-02T01:41:33+06:00" level=info msg="handled request" duration=1.0347576s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60315" status=200
+time="2024-03-02T01:41:35+06:00" level=info msg="handled request" duration=170.2855ms method=GET path=/admin/api/users/65dcece311ed10bf200c90ca remoteAddr="127.0.0.1:60315" status=200
+time="2024-03-02T01:41:48+06:00" level=info msg="handled request" duration=169.7074ms method=PUT path=/admin/api/users/65dcece311ed10bf200c90ca remoteAddr="127.0.0.1:60315" status=200
+time="2024-03-02T01:43:00+06:00" level=info msg="handled request" duration=172.5504ms method=PUT path=/admin/api/users/65dcece311ed10bf200c90ca remoteAddr="127.0.0.1:60315" status=200
+time="2024-03-02T01:45:12+06:00" level=info msg="handled request" duration=169.3346ms method=PUT path=/admin/api/users/65dcece311ed10bf200c90ca remoteAddr="127.0.0.1:60358" status=200
+time="2024-03-02T01:46:15+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:46:15+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:47:35+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:47:35+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:47:35+06:00" level=info msg="handled request" duration=6.3719ms method=GET path=/admin/ remoteAddr="127.0.0.1:60408" status=200
+time="2024-03-02T01:49:28+06:00" level=info msg="handled request" duration=5.5312ms method=GET path=/admin/ remoteAddr="127.0.0.1:60467" status=200
+time="2024-03-02T01:49:29+06:00" level=info msg="handled request" duration=1.0392387s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60467" status=200
+time="2024-03-02T01:49:30+06:00" level=info msg="handled request" duration=170.1185ms method=GET path=/admin/api/users/65dcece311ed10bf200c90c7 remoteAddr="127.0.0.1:60467" status=200
+time="2024-03-02T01:49:40+06:00" level=info msg="handled request" duration=178.6207ms method=PUT path=/admin/api/users/65dcece311ed10bf200c90c7 remoteAddr="127.0.0.1:60467" status=200
+time="2024-03-02T01:49:41+06:00" level=info msg="handled request" duration=1.0288317s method=GET path=/admin/api/users remoteAddr="127.0.0.1:60467" status=200
+time="2024-03-02T01:50:03+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:50:03+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T01:54:50+06:00" level=info msg="handled request" duration=3.6602ms method=GET path=/admin/ remoteAddr="[::1]:60581" status=200
+time="2024-03-02T01:54:52+06:00" level=info msg="handled request" duration=1.0251067s method=GET path=/admin/api/users remoteAddr="[::1]:60581" status=200
+time="2024-03-02T01:54:53+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T01:54:53+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:36:50+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:36:50+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:40:38+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:40:38+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:42:31+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:42:31+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:43:48+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:43:48+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:44:21+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:44:21+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:56:16+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:56:16+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:56:56+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:56:56+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:58:01+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:58:01+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:58:02+06:00" level=info msg="handled request" duration=13.2329ms method=GET path=/admin/ remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:04+06:00" level=info msg="handled request" duration=1.029128s method=GET path=/admin/api/users remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:09+06:00" level=info msg="handled request" duration=6.1821ms method=GET path=/ remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:10+06:00" level=info msg="handled request" duration=103.3372ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:61623" status=200
+time="2024-03-02T02:58:10+06:00" level=info msg="handled request" duration=113.41ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:11+06:00" level=info msg="handled request" duration=1.7125ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:12+06:00" level=info msg="handled request" duration=0s method=GET path=/auth remoteAddr="127.0.0.1:61619" status=301
+time="2024-03-02T02:58:12+06:00" level=info msg="handled request" duration=3.4025ms method=GET path=/auth/ remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:12+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:61623" status=200
+time="2024-03-02T02:58:12+06:00" level=info msg="handled request" duration=1.8824ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:12+06:00" level=info msg="handled request" duration=0s method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:21+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:58:21+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:58:32+06:00" level=info msg="handled request" duration=271.3003ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:32+06:00" level=info msg="handled request" duration=0s method=GET path=/admin remoteAddr="127.0.0.1:61619" status=301
+time="2024-03-02T02:58:32+06:00" level=info msg="handled request" duration=4.9488ms method=GET path=/admin/ remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:34+06:00" level=info msg="handled request" duration=1.0304358s method=GET path=/admin/api/users remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:34+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:58:34+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:58:42+06:00" level=info msg="handled request" duration=172.8865ms method=DELETE path=/admin/api/users/65dcece311ed10bf200c90c5 remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:43+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T02:58:43+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T02:58:43+06:00" level=info msg="handled request" duration=857.4028ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:57+06:00" level=info msg="handled request" duration=170.2379ms method=DELETE path=/admin/api/users/65e1cf669135d8ca3448c2d8 remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:58:58+06:00" level=info msg="handled request" duration=851.1862ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:59:01+06:00" level=info msg="handled request" duration=171.3093ms method=DELETE path=/admin/api/users/65e1cff7aeb53b01a8403e56 remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:59:02+06:00" level=info msg="handled request" duration=854.443ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:59:06+06:00" level=info msg="handled request" duration=173.7292ms method=DELETE path=/admin/api/users/65e1d7d0c7d76ddcd6852063 remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T02:59:07+06:00" level=info msg="handled request" duration=859.4162ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:61619" status=200
+time="2024-03-02T03:30:02+06:00" level=info msg="handled request" duration=173.5104ms method=DELETE path=/admin/api/users/65dcece311ed10bf200c9104 remoteAddr="127.0.0.1:61942" status=200
+time="2024-03-02T03:30:02+06:00" level=info msg="handled request" duration=859.7633ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:61942" status=200
+time="2024-03-02T03:35:49+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:35:49+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T03:54:00+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:54:00+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T03:54:39+06:00" level=info msg="handled request" duration=5.6621ms method=GET path=/admin/ remoteAddr="127.0.0.1:62385" status=200
+time="2024-03-02T03:54:40+06:00" level=info msg="handled request" duration=861.8218ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62385" status=200
+time="2024-03-02T03:55:04+06:00" level=info msg="handled request" duration=3.0003ms method=GET path=/admin/ remoteAddr="127.0.0.1:62385" status=200
+time="2024-03-02T03:55:05+06:00" level=info msg="handled request" duration=863.1481ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62385" status=200
+time="2024-03-02T03:55:07+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:55:07+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T03:55:20+06:00" level=info msg="handled request" duration=3.1031ms method=GET path=/admin/ remoteAddr="[::1]:62417" status=200
+time="2024-03-02T03:55:21+06:00" level=info msg="handled request" duration=858.0614ms method=GET path=/admin/api/users remoteAddr="[::1]:62417" status=200
+time="2024-03-02T03:55:35+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:55:35+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T03:55:35+06:00" level=info msg="handled request" duration=2.9912ms method=GET path=/admin/ remoteAddr="[::1]:62417" status=200
+time="2024-03-02T03:55:36+06:00" level=info msg="handled request" duration=859.9789ms method=GET path=/admin/api/users remoteAddr="[::1]:62417" status=200
+time="2024-03-02T03:56:13+06:00" level=info msg="handled request" duration=3.329ms method=GET path=/admin/ remoteAddr="127.0.0.1:62449" status=200
+time="2024-03-02T03:56:14+06:00" level=info msg="handled request" duration=859.5231ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62449" status=200
+time="2024-03-02T03:56:29+06:00" level=info msg="handled request" duration=2.2073ms method=GET path=/admin/ remoteAddr="127.0.0.1:62449" status=200
+time="2024-03-02T03:56:30+06:00" level=info msg="handled request" duration=851.0411ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62449" status=200
+time="2024-03-02T03:56:31+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:56:31+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T03:56:51+06:00" level=info msg="handled request" duration=6.0592ms method=GET path=/admin/ remoteAddr="127.0.0.1:62477" status=200
+time="2024-03-02T03:56:52+06:00" level=info msg="handled request" duration=851.324ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62477" status=200
+time="2024-03-02T03:58:07+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:58:07+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T03:58:18+06:00" level=info msg="handled request" duration=6.5006ms method=GET path=/admin/ remoteAddr="127.0.0.1:62517" status=200
+time="2024-03-02T03:58:19+06:00" level=info msg="handled request" duration=871.7248ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62517" status=200
+time="2024-03-02T03:59:06+06:00" level=info msg="handled request" duration=8.0003ms method=GET path=/admin/ remoteAddr="127.0.0.1:62517" status=200
+time="2024-03-02T03:59:07+06:00" level=info msg="handled request" duration=869.8826ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62517" status=200
+time="2024-03-02T03:59:09+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T03:59:09+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:05:43+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:05:43+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:08:10+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:08:10+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:08:35+06:00" level=info msg="handled request" duration=8.9755ms method=GET path=/admin/ remoteAddr="127.0.0.1:62731" status=200
+time="2024-03-02T04:08:36+06:00" level=info msg="handled request" duration=867.5791ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62731" status=200
+time="2024-03-02T04:11:04+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:11:04+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:12:20+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:12:20+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:13:15+06:00" level=info msg="handled request" duration=6.9412ms method=GET path=/admin/ remoteAddr="127.0.0.1:62814" status=200
+time="2024-03-02T04:13:16+06:00" level=info msg="handled request" duration=869.3647ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62814" status=200
+time="2024-03-02T04:13:17+06:00" level=info msg="handled request" duration=171.2111ms method=POST path=/admin/send_message remoteAddr="127.0.0.1:62814" status=200
+time="2024-03-02T04:16:46+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:16:46+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:17:43+06:00" level=info msg="handled request" duration=7.9481ms method=GET path=/admin/ remoteAddr="127.0.0.1:62881" status=200
+time="2024-03-02T04:17:44+06:00" level=info msg="handled request" duration=865.1017ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62881" status=200
+time="2024-03-02T04:17:47+06:00" level=info msg="handled request" duration=171.3004ms method=POST path=/admin/send_message remoteAddr="127.0.0.1:62881" status=200
+time="2024-03-02T04:18:58+06:00" level=info msg="handled request" duration=2.9703ms method=GET path=/admin/ remoteAddr="127.0.0.1:62881" status=200
+time="2024-03-02T04:18:58+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:18:58+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:20:02+06:00" level=info msg="handled request" duration=5.7217ms method=GET path=/admin/ remoteAddr="127.0.0.1:62939" status=200
+time="2024-03-02T04:20:03+06:00" level=info msg="handled request" duration=853.1226ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:62939" status=200
+time="2024-03-02T04:22:24+06:00" level=error msg="An error occurred" action="trying to send message topwilliams@example.org" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 u8-20020ac248a8000000b00513200c1444sm744619lfg.225 - gsmtp"
+time="2024-03-02T04:22:24+06:00" level=error msg="An error occurred" action="trying to send message topchapman@example.net" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 12-20020ac2482c000000b0051323dc3554sm740339lft.234 - gsmtp"
+time="2024-03-02T04:22:25+06:00" level=error msg="An error occurred" action="trying to send message tonathanford@example.com" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 t10-20020ac24c0a000000b005130ff68b87sm754248lfq.109 - gsmtp"
+time="2024-03-02T04:22:26+06:00" level=error msg="An error occurred" action="trying to send message tobriantran@example.net" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 b15-20020a0565120b8f00b005131cbd5731sm759031lfv.92 - gsmtp"
+time="2024-03-02T04:22:26+06:00" level=error msg="An error occurred" action="trying to send message tojuliewhite@example.org" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 h10-20020a19700a000000b00511ad9e3f25sm749337lfc.286 - gsmtp"
+time="2024-03-02T04:22:27+06:00" level=error msg="An error occurred" action="trying to send message tomary78@example.org" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 l27-20020ac24a9b000000b005132f8547cdsm407386lfp.19 - gsmtp"
+time="2024-03-02T04:22:28+06:00" level=error msg="An error occurred" action="trying to send message tousanchez@example.org" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 o22-20020a198c16000000b005133605247bsm192516lfd.224 - gsmtp"
+time="2024-03-02T04:22:28+06:00" level=error msg="An error occurred" action="trying to send message toshannoneileen@example.com" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 c11-20020a056512324b00b00512d2453210sm759810lfr.101 - gsmtp"
+time="2024-03-02T04:22:29+06:00" level=error msg="An error occurred" action="trying to send message tocwilson@example.org" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 dw20-20020a0565122c9400b0051330888c6esm378187lfb.26 - gsmtp"
+time="2024-03-02T04:22:29+06:00" level=error msg="An error occurred" action="trying to send message tojwatkins@example.net" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 s5-20020a056512314500b005132bbeb025sm563108lfi.77 - gsmtp"
+time="2024-03-02T04:22:30+06:00" level=error msg="An error occurred" action="trying to send message toofrederick@example.net" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 n9-20020a2e7209000000b002d24de76dffsm692186ljc.100 - gsmtp"
+time="2024-03-02T04:22:31+06:00" level=error msg="An error occurred" action="trying to send message tomegannixon@example.org" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 u16-20020ac25bd0000000b005131c9b1aa8sm764455lfn.82 - gsmtp"
+time="2024-03-02T04:22:31+06:00" level=error msg="An error occurred" action="trying to send message toersultanserimbetov@gmail.com" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 k5-20020a192d05000000b0051321d51026sm769317lfj.79 - gsmtp"
+time="2024-03-02T04:22:32+06:00" level=error msg="An error occurred" action="trying to send message toadiq685@gmail.com" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 t11-20020a056512208b00b005131cf6ea51sm758760lfr.8 - gsmtp"
+time="2024-03-02T04:22:33+06:00" level=error msg="An error occurred" action="trying to send message toaktumar.r@gmail.com" error="454 4.7.0 Too many login attempts, please try again later. For more information,\n4.7.0 go to\n4.7.0  https://support.google.com/mail/answer/7126229 t14-20020a05651c204e00b002d3387c3bfdsm342627ljo.21 - gsmtp"
+time="2024-03-02T04:22:33+06:00" level=info msg="handled request" duration=2m27.5178254s method=POST path=/admin/send_message remoteAddr="127.0.0.1:62939" status=200
+time="2024-03-02T04:25:21+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:25:21+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:26:23+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:26:23+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:29:11+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:29:11+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:30:38+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:30:38+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:33:47+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:33:47+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:35:37+06:00" level=info msg="handled request" duration=7.3554ms method=GET path=/ remoteAddr="127.0.0.1:63296" status=200
+time="2024-03-02T04:35:37+06:00" level=info msg="handled request" duration=107.2411ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:63296" status=200
+time="2024-03-02T04:35:37+06:00" level=info msg="handled request" duration=100.9977ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:63297" status=200
+time="2024-03-02T04:35:37+06:00" level=info msg="handled request" duration=1.0021ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:63296" status=200
+time="2024-03-02T04:35:39+06:00" level=info msg="handled request" duration=0s method=GET path=/menu remoteAddr="127.0.0.1:63297" status=303
+time="2024-03-02T04:35:40+06:00" level=info msg="handled request" duration=0s method=GET path=/menu/ remoteAddr="127.0.0.1:63297" status=303
+time="2024-03-02T04:35:40+06:00" level=info msg="handled request" duration=2.9568ms method=GET path=/ remoteAddr="127.0.0.1:63297" status=200
+time="2024-03-02T04:35:40+06:00" level=info msg="handled request" duration=3.4894ms method=GET path=/ remoteAddr="127.0.0.1:63297" status=200
+time="2024-03-02T04:35:41+06:00" level=info msg="handled request" duration="413.6µs" method=GET path=/menu/ remoteAddr="127.0.0.1:63297" status=303
+time="2024-03-02T04:35:41+06:00" level=info msg="handled request" duration=3.9842ms method=GET path=/ remoteAddr="127.0.0.1:63297" status=200
+time="2024-03-02T04:36:20+06:00" level=info msg="handled request" duration=2.7137ms method=GET path=/ remoteAddr="127.0.0.1:63297" status=200
+time="2024-03-02T04:36:23+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:36:23+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:43:04+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:43:04+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:43:36+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:43:36+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:44:00+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:44:00+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:44:18+06:00" level=fatal msg="Failed to parse glob pattern './views/blocks/*.html': template: header.html:22: unexpected \"/\" in command"
+time="2024-03-02T04:44:54+06:00" level=fatal msg="Failed to parse glob pattern './views/blocks/*.html': template: header.html:22: unexpected \"/\" in command"
+time="2024-03-02T04:45:29+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:45:29+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:47:53+06:00" level=info msg="handled request" duration=20.2587ms method=GET path=/ remoteAddr="127.0.0.1:64336" status=200
+time="2024-03-02T04:47:53+06:00" level=info msg="handled request" duration=2.0019ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64339" status=200
+time="2024-03-02T04:47:53+06:00" level=info msg="handled request" duration=133.5543ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64336" status=200
+time="2024-03-02T04:48:05+06:00" level=info msg="handled request" duration=4.5419ms method=GET path=/ remoteAddr="127.0.0.1:64345" status=200
+time="2024-03-02T04:50:05+06:00" level=info msg="handled request" duration=2.8727ms method=GET path=/ remoteAddr="127.0.0.1:64361" status=200
+time="2024-03-02T04:50:10+06:00" level=info msg="handled request" duration="187.5µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64361" status=200
+time="2024-03-02T04:50:10+06:00" level=info msg="handled request" duration="599.7µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64361" status=200
+time="2024-03-02T04:50:22+06:00" level=info msg="handled request" duration=2.9999ms method=GET path=/ remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:23+06:00" level=info msg="handled request" duration="864.2µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:23+06:00" level=info msg="handled request" duration="376.3µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:23+06:00" level=info msg="handled request" duration="468.7µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:38+06:00" level=info msg="handled request" duration=4.0954ms method=GET path=/ remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:38+06:00" level=info msg="handled request" duration="342.4µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:38+06:00" level=info msg="handled request" duration="766.7µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:50:38+06:00" level=info msg="handled request" duration=0s method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:51:43+06:00" level=info msg="handled request" duration=2.0001ms method=GET path=/ remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:51:43+06:00" level=info msg="handled request" duration=1.0011ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:51:43+06:00" level=info msg="handled request" duration="584.7µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:51:43+06:00" level=info msg="handled request" duration=0s method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64367" status=200
+time="2024-03-02T04:51:44+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:51:44+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:51:58+06:00" level=info msg="handled request" duration=3.2117ms method=GET path=/ remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:51:58+06:00" level=info msg="handled request" duration=108.9722ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:51:58+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:51:58+06:00" level=info msg="handled request" duration="180.8µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:52:11+06:00" level=info msg="handled request" duration=4.2753ms method=GET path=/ remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:52:11+06:00" level=info msg="handled request" duration="998.4µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:52:11+06:00" level=info msg="handled request" duration="122µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:52:11+06:00" level=info msg="handled request" duration=1.0005ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64419" status=200
+time="2024-03-02T04:52:12+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:52:12+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:52:22+06:00" level=info msg="handled request" duration=3.4703ms method=GET path=/ remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:52:22+06:00" level=info msg="handled request" duration=111.547ms method=GET path=/static/css/HomeStyle.css remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:52:22+06:00" level=info msg="handled request" duration=109.0695ms method=GET path=/static/css/footer.css remoteAddr="[::1]:64466" status=200
+time="2024-03-02T04:52:23+06:00" level=info msg="handled request" duration="920.4µs" method=GET path=/static/img/favicon.png remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:11+06:00" level=info msg="handled request" duration=5.2717ms method=GET path=/ remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:11+06:00" level=info msg="handled request" duration="333.3µs" method=GET path=/static/css/HomeStyle.css remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:11+06:00" level=info msg="handled request" duration=1.1109ms method=GET path=/static/css/footer.css remoteAddr="[::1]:64466" status=200
+time="2024-03-02T04:53:12+06:00" level=info msg="handled request" duration=1.0111ms method=GET path=/static/img/favicon.png remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:13+06:00" level=info msg="handled request" duration=3.0556ms method=GET path=/ remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:13+06:00" level=info msg="handled request" duration="177.6µs" method=GET path=/static/css/HomeStyle.css remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:13+06:00" level=info msg="handled request" duration="27.2µs" method=GET path=/static/css/footer.css remoteAddr="[::1]:64466" status=200
+time="2024-03-02T04:53:13+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:53:13+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T04:53:13+06:00" level=info msg="handled request" duration="956.6µs" method=GET path=/static/img/favicon.png remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:14+06:00" level=info msg="handled request" duration=1.0332ms method=GET path=/auth remoteAddr="[::1]:64463" status=301
+time="2024-03-02T04:53:14+06:00" level=info msg="handled request" duration=4.8974ms method=GET path=/auth/ remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:15+06:00" level=info msg="handled request" duration=1.0028ms method=GET path=/static/css/AuthStyle.css remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:53:15+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/footer.css remoteAddr="[::1]:64466" status=200
+time="2024-03-02T04:53:15+06:00" level=info msg="handled request" duration="970.9µs" method=GET path=/static/img/favicon.png remoteAddr="[::1]:64463" status=200
+time="2024-03-02T04:59:11+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T04:59:11+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:02:36+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:02:36+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:03:03+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:03:03+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:03:28+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:03:28+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:04:30+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:04:30+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:06:16+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:06:16+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:08:34+06:00" level=info msg="handled request" duration=7.7509ms method=GET path=/ remoteAddr="127.0.0.1:64794" status=200
+time="2024-03-02T05:08:34+06:00" level=info msg="handled request" duration=104.7866ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64794" status=200
+time="2024-03-02T05:08:34+06:00" level=info msg="handled request" duration="660.2µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64794" status=200
+time="2024-03-02T05:08:37+06:00" level=info msg="handled request" duration=4.0174ms method=GET path=/auth/ remoteAddr="127.0.0.1:64799" status=200
+time="2024-03-02T05:08:37+06:00" level=info msg="handled request" duration="651.6µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:64799" status=200
+time="2024-03-02T05:08:43+06:00" level=info msg="handled request" duration=3.3206ms method=GET path=/auth/ remoteAddr="127.0.0.1:64799" status=200
+time="2024-03-02T05:09:16+06:00" level=info msg="handled request" duration=168.8526ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:64799" status=400
+time="2024-03-02T05:10:28+06:00" level=info msg="handled request" duration=2.1181765s method=POST path=/auth/sign_up remoteAddr="127.0.0.1:64799" status=201
+time="2024-03-02T05:10:39+06:00" level=info msg="handled request" duration=3.2015ms method=GET path=/ remoteAddr="127.0.0.1:64799" status=200
+time="2024-03-02T05:10:39+06:00" level=info msg="handled request" duration="740.5µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64799" status=200
+time="2024-03-02T05:10:40+06:00" level=info msg="handled request" duration="127.4µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64799" status=200
+time="2024-03-02T05:13:01+06:00" level=info msg="handled request" duration=41.4054ms method=GET path=/ remoteAddr="127.0.0.1:64852" status=200
+time="2024-03-02T05:13:01+06:00" level=info msg="handled request" duration="198.3µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64852" status=200
+time="2024-03-02T05:13:02+06:00" level=info msg="handled request" duration="274.1µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64852" status=200
+time="2024-03-02T05:13:04+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:13:04+06:00" level=info msg="Listening to port: :3000"
+time="2024-03-02T05:15:06+06:00" level=info msg="handled request" duration=7.0305ms method=GET path=/ remoteAddr="127.0.0.1:64897" status=200
+time="2024-03-02T05:15:06+06:00" level=info msg="handled request" duration=106.7311ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64897" status=200
+time="2024-03-02T05:15:42+06:00" level=info msg="handled request" duration=2.2631ms method=GET path=/ remoteAddr="127.0.0.1:64913" status=200
+time="2024-03-02T05:15:42+06:00" level=info msg="handled request" duration="485µs" method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:64913" status=200
+time="2024-03-02T05:15:42+06:00" level=info msg="handled request" duration="162.7µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:64913" status=200
+time="2024-03-02T05:15:43+06:00" level=error msg="An error occurred" action="starting the server" error="listen tcp :3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+time="2024-03-02T05:15:43+06:00" level=info msg="Listening to port: :3000"
