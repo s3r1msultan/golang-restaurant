@@ -96,6 +96,8 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to parse form data", http.StatusBadRequest)
 		return
 	}
+
+	fmt.Println(r.FormValue("first_name"))
 	updateUser.FirstName = r.FormValue("first_name")
 	updateUser.LastName = r.FormValue("last_name")
 	updateUser.Email = r.FormValue("email")
@@ -105,7 +107,14 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 	defer cancel()
 
 	filter := bson.M{"_id": userId}
-	update := bson.M{"$set": updateUser}
+	update := bson.M{
+		"$set": bson.M{
+			"first_name":   updateUser.FirstName,
+			"last_name":    updateUser.LastName,
+			"email":        updateUser.Email,
+			"phone_number": updateUser.PhoneNumber,
+		},
+	}
 
 	_, err = db.GetUsersCollection().UpdateOne(ctx, filter, update)
 	if err != nil {
