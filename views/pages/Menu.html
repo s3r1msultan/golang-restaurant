@@ -75,7 +75,6 @@
     document.querySelectorAll('.add-to-cart-btn').forEach(button => {
       button.addEventListener('click', function() {
         const dishId = this.getAttribute('data-dish-id');
-        console.log(dishId)
 
         fetch('/profile/cart/add', {
           method: 'PUT',

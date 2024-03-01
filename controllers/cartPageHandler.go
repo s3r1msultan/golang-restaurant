@@ -30,7 +30,7 @@ func GetDishes(w http.ResponseWriter, r *http.Request) {
 	if err == nil {
 		headerData.ProfileID = objectId.Hex()
 	}
-
+	db.GetUsersCollection().FindOne(context.TODO(), bson.M{"_id": objectId}).Decode(&User)
 	data := models.PageData{
 		HeaderData: headerData,
 		HeadData:   headData,
@@ -69,7 +69,7 @@ func AddDish(w http.ResponseWriter, r *http.Request) {
 		UpdateOne(
 			context.TODO(),
 			bson.M{"_id": objectId},
-			bson.M{"$addToSet": bson.M{"cart": dish}}, // Note: Adjust this if your cart structure is different
+			bson.M{"$push": bson.M{"cart": dish}}, // Note: Adjust this if your cart structure is different
 		)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
