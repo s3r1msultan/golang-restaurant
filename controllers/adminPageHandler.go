@@ -17,7 +17,7 @@ import (
 func GetUser(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	fmt.Println(vars)
-	userID, err := primitive.ObjectIDFromHex(vars["id"])
+	userID, err := primitive.ObjectIDFromHex(vars["identification"])
 	if err != nil {
 		http.Error(w, "Invalid user ID", http.StatusBadRequest)
 		return
@@ -92,23 +92,20 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var updateUser models.User
-	if err := json.NewDecoder(r.Body).Decode(&updateUser); err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+	if err := r.ParseForm(); err != nil {
+		http.Error(w, "Failed to parse form data", http.StatusBadRequest)
 		return
 	}
+	updateUser.FirstName = r.FormValue("first_name")
+	updateUser.LastName = r.FormValue("last_name")
+	updateUser.Email = r.FormValue("email")
+	updateUser.PhoneNumber = r.FormValue("phone_number")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
 	filter := bson.M{"_id": userId}
-	update := bson.M{
-		"$set": bson.M{
-			"first_name":   updateUser.FirstName,
-			"last_name":    updateUser.LastName,
-			"email":        updateUser.Email,
-			"phone_number": updateUser.PhoneNumber,
-		},
-	}
+	update := bson.M{"$set": updateUser}
 
 	_, err = db.GetUsersCollection().UpdateOne(ctx, filter, update)
 	if err != nil {
