@@ -6,7 +6,6 @@ import (
 	"final/db"
 	"final/initializers"
 	"final/models"
-	"fmt"
 	"github.com/gorilla/mux"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -19,30 +18,32 @@ type notifyInfo struct {
 	Email string `bson:"email" json:"email"`
 }
 
-func NofityUsers(w http.ResponseWriter, r *http.Request) {
-	if err := r.ParseForm(); err != nil {
-		initializers.LogError("parsing data from form", err, nil)
-		json.NewEncoder(w).Encode(bson.M{"is_sent": false})
+type notifyMessage struct {
+	Subject string `bson:"subject" json:"subject"`
+	Message string `bson:"message" json:"message"`
+}
 
+func NotifyVerifiedUsers(w http.ResponseWriter, r *http.Request) {
+	var message notifyMessage
+	if err := json.NewDecoder(r.Body).Decode(&message); err != nil {
+		initializers.LogError("parsing data from json request", err, nil)
+		json.NewEncoder(w).Encode(bson.M{"is_sent": false})
 		w.WriteHeader(http.StatusBadRequest)
 	}
-
-	message := r.FormValue("message")
-	subject := r.FormValue("subject")
 
 	filter := bson.M{
 		"email_verified": true,
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 	cursor, err := db.GetUsersCollection().Find(ctx, filter)
 	if err != nil {
 		initializers.LogError("getting all users", err, nil)
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(bson.M{"is_sent": false})
-
 	}
-	var i uint16 = 0
+	defer cursor.Close(ctx)
+	var failedEmails []string
 	var info notifyInfo
 	for cursor.Next(ctx) {
 		err := cursor.Decode(&info)
@@ -50,16 +51,21 @@ func NofityUsers(w http.ResponseWriter, r *http.Request) {
 			initializers.LogError("trying to decode user from cursor", err, nil)
 			continue
 		}
-		err = SendMessage(info.Email, subject, message)
+		err = SendMessage(info.Email, message.Subject, message.Message)
 		if err != nil {
 			initializers.LogError("trying to send message to"+info.Email, err, nil)
+			failedEmails = append(failedEmails, info.Email)
 		}
-		i++
-		fmt.Println(i)
-	}
 
+	}
+	response := bson.M{"is_sent": true}
+	if len(failedEmails) > 0 {
+		response["is_sent"] = false
+		response["failed_emails"] = failedEmails
+	}
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	json.NewEncoder(w).Encode(bson.M{"is_sent": true})
+	json.NewEncoder(w).Encode(response)
 }
 
 func GetUser(w http.ResponseWriter, r *http.Request) {
@@ -110,7 +116,7 @@ func AddUser(w http.ResponseWriter, r *http.Request) {
 
 func ListUsers(w http.ResponseWriter, r *http.Request) {
 	var users []models.User
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 25*time.Second)
 	defer cancel()
 
 	cursor, err := db.GetUsersCollection().Find(ctx, bson.M{})
@@ -143,7 +149,7 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to parse json data", http.StatusBadRequest)
 		return
 	}
-
+	updateUser.UpdatedAt = time.Now()
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
@@ -157,6 +163,7 @@ func UpdateUser(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(bson.M{"message": "User updated successfully"})
 }
 
@@ -178,11 +185,12 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(bson.M{"message": "User deleted successfully"})
 }
 
 func AdminPageHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl := initTemplates()
+	tmpl := initializers.InitTemplates()
 	err := tmpl.ExecuteTemplate(w, "Admin.html", nil)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)

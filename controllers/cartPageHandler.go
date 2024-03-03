@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"final/db"
+	"final/initializers"
 	"final/middlewares"
 	"final/models"
 	"go.mongodb.org/mongo-driver/bson"
@@ -16,7 +17,7 @@ type dishId struct {
 }
 
 func GetDishes(w http.ResponseWriter, r *http.Request) {
-	tmpl := initTemplates()
+	tmpl := initializers.InitTemplates()
 	headerData := models.HeaderData{
 		CurrentSite: "Cart",
 	}

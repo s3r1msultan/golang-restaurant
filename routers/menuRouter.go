@@ -11,5 +11,4 @@ func MenuRouter(menuRouter *mux.Router) {
 	menuRouter.StrictSlash(true)
 	menuRouter.Use(middlewares.JWTAuthentication)
 	menuRouter.HandleFunc("/", controllers.MenuPageHandler).Methods(http.MethodGet)
-	menuRouter.HandleFunc("/{id}", controllers.DishPageHandler).Methods(http.MethodGet)
 }

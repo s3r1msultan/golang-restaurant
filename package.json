@@ -1,0 +1,17 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s3r1msultan/golang-restaurant.git"
+  },
+  "private": true,
+  "dependencies": {
+    "@playwright/test": "^1.42.1"
+  }
+}

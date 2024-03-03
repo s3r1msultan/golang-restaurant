@@ -18,10 +18,12 @@ func InitLogger() {
 }
 
 func LogError(action string, err error, fields map[string]interface{}) {
+	if err != nil {
+		fields["error"] = err.Error()
+	}
 	if fields == nil {
 		fields = make(map[string]interface{})
 	}
-	fields["error"] = err.Error()
 	fields["action"] = action
 	log.WithFields(fields).Error("An error occurred")
 }

@@ -25,7 +25,7 @@ def generate_users_data(dishes_data, num_users=100):
             "password": "$2a$12$5qg8degfG15UmApJ5U7NO.5QiWoXVDKnmOzZevHltgjleEd54ZC9q",  # Abcd_1234
             "phone_number": fake.phone_number(),
             "verification_token": fake.sha256(raw_output=False),
-            "email_verified": True,
+            "email_verified": False,
             "orders": [
                 {
                     "_id": {"$oid": str(bson.ObjectId())},
@@ -44,6 +44,8 @@ def generate_users_data(dishes_data, num_users=100):
                     "zip_code": fake.zipcode(),
                     "phone_number": fake.phone_number(),
                 },
+            "created_at": {"$date": datetime.utcnow().isoformat()},  # Format as per your requirement
+            "updated_at": {"$date": datetime.utcnow().isoformat()},  # Format as per your requirement
         }
         users_data.append(user)
 
@@ -58,3 +60,4 @@ with open('users_data.json', 'w', encoding='utf-8') as file:
     json.dump(users_data, file, indent=4, ensure_ascii=False)
 
 print("Файл 'users_data.json' успешно создан с фейковой информацией о пользователях.")
+

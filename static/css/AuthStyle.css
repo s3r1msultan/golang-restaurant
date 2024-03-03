@@ -39,7 +39,8 @@ html, body {
 
 .wrapper {
     overflow: hidden;
-    max-width: 400px;
+    width: 100%;
+    max-width: 500px;
     background: whitesmoke;
     padding: 30px;
     border-radius: 15px;
@@ -129,9 +130,12 @@ input[type="radio"] {
     height: 50px;
     width: 100%;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 .form-inner form .field input {
     height: 100%;
+    max-width: 400px;
     width: 100%;
     outline: none;
     padding-left: 15px;
@@ -140,6 +144,10 @@ input[type="radio"] {
     border-bottom-width: 2px;
     font-size: 15px;
     transition: all 0.5s ease;
+}
+
+#signin-button, #signup-button {
+    padding-left: 0;
 }
 .form-inner form .field input:focus {
     border-color: #1a75ff;
@@ -161,14 +169,4 @@ form .field input:focus::placeholder {
 .form-inner form .pass-link a, .form-inner form .signup-link a {
     color: #1a75ff;
     text-decoration: none;
-}
-
-@media (max-width: 576px) {
-
-}
-@media (min-width: 577px) and (max-width: 992px) {
-
-}
-@media (min-width: 993px) {
-
 }

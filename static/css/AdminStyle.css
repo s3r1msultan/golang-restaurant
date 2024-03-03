@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-custom {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 24px;
+    border-width: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-custom:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.4s;
+}
+.form-custom {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+}
+.table-custom {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.btn-sign-out {
+    background-color: #dc3545; /* Bootstrap danger red */
+    border-color: #dc3545;
+    color: white;
+    padding: 10px 24px;
+    border-width: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-property: all;
+    transition-timing-function:  linear;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-sign-out:hover {
+    background-color: #c82333;
+    border: 2px solid #bd2130;
+    color: white;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.4s;
+}
+.table-custom {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.table-custom th, .table-custom td {
+    text-align: left;
+    padding: 12px;
+}
+.table-custom th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 500;
+}
+.table-custom tr:nth-child(even){background-color: #f2f2f2;}
+
+.modal-content {
+    border-radius: 0.5rem;
+}

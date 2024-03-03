@@ -1,6 +1,10 @@
 package models
 
-import "go.mongodb.org/mongo-driver/bson/primitive"
+import (
+	"errors"
+	"go.mongodb.org/mongo-driver/bson/primitive"
+	"time"
+)
 
 type User struct {
 	ObjectId          primitive.ObjectID `bson:"_id,omitempty" json:"id"`
@@ -15,4 +19,19 @@ type User struct {
 	Cart              []DishData         `bson:"cart" json:"cart"`
 	Delivery          DeliveryData       `bson:"delivery" json:"delivery"`
 	IsAdmin           bool               `bson:"is_admin" json:"isAdmin"`
+	CreatedAt         time.Time          `bson:"created_at" json:"created_at"`
+	UpdatedAt         time.Time          `bson:"updated_at" json:"updated_at"`
+}
+
+func ValidateUser(user User) error {
+	if user.Email == "" {
+		return errors.New("email is required")
+	}
+	if user.FirstName == "" {
+		return errors.New("first name is required")
+	}
+	if user.LastName == "" {
+		return errors.New("last name is required")
+	}
+	return nil
 }

@@ -3,6 +3,7 @@ package controllers
 import (
 	"context"
 	"final/db"
+	"final/initializers"
 	"final/middlewares"
 	"final/models"
 	log "github.com/sirupsen/logrus"
@@ -64,7 +65,7 @@ func MenuPageHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tmpl := initTemplates()
+	tmpl := initializers.InitTemplates()
 	headData := models.HeadData{
 		HeadTitle: "Menu",
 		StyleName: "Menu",

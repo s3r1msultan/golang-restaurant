@@ -8,9 +8,11 @@ import (
 	"final/db"
 	"final/initializers"
 	"final/models"
+	"fmt"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"net/http"
+	"os"
 )
 
 func GenerateToken() (string, error) {
@@ -21,12 +23,20 @@ func GenerateToken() (string, error) {
 	return hex.EncodeToString(bytes), nil
 }
 
-func SendVerificationEmail(to string, token string) error {
-	verificationURL := "https://golang-restaurant.onrender.com" + "/verify?token=" + token
-	subject := "Verify your email address"
-	message := "To: " + to + "\r\n" +
-		"Subject: " + subject + "\r\n\r\n" +
-		"Click the link to verify your email address: " + verificationURL
+func SendVerificationEmail(firstName, lastName, to, token string, r *http.Request) error {
+	//baseURL := fmt.Sprintf("%s://%s", r.URL.Scheme, r.Header.Get("Host"))
+	//verificationURL := fmt.Sprintf("%s/verify?token=%s", baseURL, token)
+	url := os.Getenv("VERIFICATION_URL")
+	verificationURL := url + "/verify?token=" + token
+	subject := "Verify Your Email Address"
+	fmt.Println(verificationURL)
+	emailTemplate := `
+    <h2>Dear %s %s,</h2>
+    <p>Thank you for registering with us. Please click on the link below to verify your email address and activate your account:</p>
+    <p><a href="%s" target="_blank">Verify Email</a></p>
+    <p>If you did not request this, please ignore this email.</p>
+`
+	message := fmt.Sprintf(emailTemplate, firstName, lastName, verificationURL)
 	return SendMessage(to, subject, message)
 }
 

@@ -4,69 +4,58 @@
 <body>
 {{template "header.html" .HeaderData}}
 
-<header class="container-fluid text-center py-4" style="background: linear-gradient(90deg, rgba(253,252,255,1) 0%, rgba(255,252,180,1) 50%, rgba(253,252,255,1) 100%)">
-    <h1>Welcome to Omii's Cuisine</h1>
+<header class="container-fluid text-center py-4 header">
+    <h1>Welcome to QuickDish Delivery</h1>
 </header>
 
 <section class="about-us">
     <div class="container">
-        <h2>About Us</h2>
-        <p>Discover a world of culinary delights at our restaurant. We pride ourselves on serving delicious dishes prepared with the finest ingredients and a touch of passion. Whether you're looking for a cozy dinner for two or a place to host a special event, we have you covered.</p>
-        <p>Our menu features a wide range of breakfast, lunch, and dinner options, each crafted to satisfy your cravings. Join us for a memorable dining experience that will tantalize your taste buds and leave you craving for more.</p>
-        <p>Visit us today and indulge in the flavors of Omii's Cuisine!</p>
+        <h2>About QuickDish</h2>
+        <p>At QuickDish, we bring the <span class="highlight">world to your doorstep</span>. As a premier dish delivery company, we specialize in delivering a diverse array of gourmet dishes from renowned <span class="highlight">local and international restaurants</span> directly to you. Whether you're craving <span class="highlight">Italian, Japanese, Indian, or traditional American cuisine</span>, QuickDish serves up a world of flavors with just a few clicks.</p>
+        <p>Our mission is to make dining at home as <span class="highlight">exciting as dining out</span>. With our easy-to-use app and website, you can explore menus, read reviews, and order your favorite dishes in minutes. Plus, our dedicated team ensures that your meals arrive <span class="highlight">hot, fresh, and ready to enjoy</span>.</p>
+        <p>Experience the joy of dining without limits with QuickDish. <span class="highlight">Wherever you are, whatever you crave</span>, we deliver delight right to your door. Start your culinary adventure with us today!</p>
     </div>
 </section>
 
-<section class="image-carousel">
-    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#restaurantCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#restaurantCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#restaurantCarousel" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://static.dezeen.com/uploads/2022/04/laurel-brasserie-bar_home-studios_dezeen_hero1-852x479.jpg" class="d-block" alt="Restaurant Interior 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://static.dezeen.com/uploads/2022/04/laurel-brasserie-bar_home-studios_dezeen_2364_col_2-852x568.jpg" class="d-block" alt="Restaurant Interior 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://static.dezeen.com/uploads/2022/04/laurel-brasserie-bar_home-studios_dezeen_2364_col_6-852x682.jpg" class="d-block" alt="Restaurant Interior 3">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#restaurantCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#restaurantCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+<section class="advantages py-4">
+    <div class="container">
+        <h2 class="advantage-title">Why Choose QuickDish?</h2>
+        <ul>
+            <li><strong>Unparalleled Variety:</strong> An extensive selection of cuisines to satisfy any craving.</li>
+            <li><strong>Seamless Ordering:</strong> A user-friendly platform for stress-free ordering.</li>
+            <li><strong>Fast Delivery:</strong> Swift service that respects your time.</li>
+            <li><strong>Quality Guarantee:</strong> Meals prepared and delivered with care.</li>
+            <li><strong>Loyalty Rewards:</strong> Earn points with every order and enjoy exclusive discounts.</li>
+        </ul>
     </div>
 </section>
 
 <section class="reviews">
     <div class="container">
-        <h2>Customer Reviews</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="review">
-                    <img class="customer-img" src="https://img.freepik.com/premium-photo/3d-avatar-boy-character_914455-603.jpg" alt="Customer 1">
-                    <h3>John Doe</h3>
-                    <p>"I had an amazing dining experience at Omii's Cuisine. The food was exquisite, and the service was top-notch. I can't wait to visit again!"</p>
+        <h2 class="text-center mb-5">Customer Testimonials</h2>
+        <div class="row g-4">
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Happy customer image">
+                    <div class="card-body">
+                        <h5 class="card-title">Alex Johnson</h5>
+                        <p class="card-text">"QuickDish has changed the way we do dinner at home. Amazing variety and the food always arrives perfectly. It's like having the city's best restaurants in my living room."</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="review">
-                    <img class="customer-img" src="https://img.freepik.com/premium-photo/3d-cartoon-little-boy-red-hair-freckled-face-glasses-white-background_812426-4953.jpg" class="rounded-circle" alt="Customer 2">
-                    <h3>Jane Smith</h3>
-                    <p>"Omii's Cuisine is the perfect place for a romantic dinner. The ambiance is charming, and the food is simply divine. Highly recommended!"</p>
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Family enjoying food">
+                    <div class="card-body">
+                        <h5 class="card-title">Samantha Lee</h5>
+                        <p class="card-text">"I love the convenience of QuickDish. Whether I'm ordering lunch for work or planning a special dinner, they always deliver. Great service and even greater food selection!"</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 {{template "footer.html"}}
 

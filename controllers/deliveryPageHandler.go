@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"final/db"
+	"final/initializers"
 	"final/middlewares"
 	"final/models"
 	"github.com/gorilla/mux"
@@ -17,7 +18,7 @@ func DeliveryPageHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodGet {
 		vars := mux.Vars(r)
 		id := vars["id"]
-		tmpl := initTemplates()
+		tmpl := initializers.InitTemplates()
 		headerData := models.HeaderData{
 			CurrentSite: "Delivery",
 			ProfileID:   id,

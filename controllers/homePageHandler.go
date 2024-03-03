@@ -1,13 +1,14 @@
 package controllers
 
 import (
+	"final/initializers"
 	"final/middlewares"
 	"final/models"
 	"net/http"
 )
 
 func HomePageHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl := initTemplates()
+	tmpl := initializers.InitTemplates()
 	headData := models.HeadData{HeadTitle: "Home", StyleName: "Home"}
 	headerData := models.HeaderData{CurrentSite: "Home"}
 	objectId, err := middlewares.ParseObjectIdFromJWT(r)

@@ -1,0 +1,20 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.badge {
+    font-weight: 700;
+}
+.remove-item-btn {
+    font-size: 0.875rem;
+}
+.empty-cart {
+    text-align: center;
+    padding: 50px;
+    color: #6c757d;
+}

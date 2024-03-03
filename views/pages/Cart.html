@@ -4,26 +4,23 @@
 
 <body>
 {{template "header.html" .HeaderData}}
-
-<header class="container-fluid text-center py-4 mb-4" style="background-color: beige">
-    <h1>Your Cart</h1>
-</header>
-
-<section class="container py-4">
+<section class="container py-3">
     {{if .Dishes}}
-    <ul class="list-group">
+    <div class="list-group shadow">
         {{range .Dishes}}
         <li class="list-group-item d-flex justify-content-between align-items-center">
-            {{.Name}}
+            <span>{{.Name}}</span>
             <div>
                 <span class="badge bg-primary rounded-pill">${{.Price}}</span>
-                <button class="btn btn-danger btn-sm ms-2 remove-item-btn" data-dish-id="{{.ObjectID.Hex}}">Remove</button>
+                <button class="btn btn-outline-danger btn-sm ms-2 remove-item-btn" data-dish-id="{{.ObjectID.Hex}}">Remove</button>
             </div>
         </li>
         {{end}}
-    </ul>
+    </div>
     {{else}}
-    <p>Your cart is empty.</p>
+    <div class="empty-cart">
+        <p>Your cart is empty.</p>
+    </div>
     {{end}}
 </section>
 

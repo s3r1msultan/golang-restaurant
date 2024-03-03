@@ -12,7 +12,7 @@ import (
 )
 
 func ProfilePageHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl := initTemplates()
+	tmpl := initializers.InitTemplates()
 	headerData := models.HeaderData{
 		CurrentSite: "Profile",
 	}

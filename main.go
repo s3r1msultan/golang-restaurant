@@ -21,13 +21,12 @@ func main() {
 	r.PathPrefix("/static").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 	r.Use(middlewares.LoggerMiddleware)
 	routers.HomeRouter(r.PathPrefix("/").Subrouter())
-	routers.SupportRouter(r.PathPrefix("/support").Subrouter())
+	routers.AdminRouter(r.PathPrefix("/admin").Subrouter())
+	routers.AuthRouter(r.PathPrefix("/auth").Subrouter())
 	routers.MenuRouter(r.PathPrefix("/menu").Subrouter())
 	routers.ProfileRouter(r.PathPrefix("/profile").Subrouter())
-	routers.AuthRouter(r.PathPrefix("/auth").Subrouter())
 	routers.VerificationRouter(r.PathPrefix("/verify").Subrouter())
-	routers.AdminRouter(r.PathPrefix("/admin").Subrouter())
-
+	routers.SupportRouter(r.PathPrefix("/support").Subrouter())
 	PORT := initializers.GetPort()
 	err = http.ListenAndServe(PORT, r)
 	if err != nil {

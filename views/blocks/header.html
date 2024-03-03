@@ -1,78 +1,70 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<header style="background-color: #F5F5F5;" class="mb-5">
+    <nav class="navbar navbar-expand-md navbar-light p-2" style="background-color: #F5F5F5;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/" style="font-family: 'Nunito', sans-serif; color: #333;">QuickDish</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-black fs-5" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/" style="font-family: 'Nunito', sans-serif; color: #555;">Home</a>
                     </li>
-                    {{if .ProfileID }}
                     <li class="nav-item">
-                        <a class="nav-link text-black fs-5" href="/menu">Menu</a>
+                        <a class="nav-link" href="/support" style="font-family: 'Nunito', sans-serif; color: #555;">Support</a>
                     </li>
+
+                    {{if ne .ProfileID ""}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/menu" style="font-family: 'Nunito', sans-serif; color: #555;">Menu</a>
+                        </li>
 
                         {{if .CurrentSite}}
-
-                            {{if ne .CurrentSite "Support" }}
-                            <li class="nav-item">
-                                <a class="nav-link text-black fs-5" href="/support">Contact Support</a>
-                            </li>
-                            {{end}}
-
                             {{if ne .CurrentSite "Orders" }}
                             <li class="nav-item">
-                                <a class="nav-link text-black fs-5" href="/profile/orders">Order History</a>
+                                <a class="nav-link" href="/profile/orders" style="font-family: 'Nunito', sans-serif; color: #555;">Orders</a>
                             </li>
                             {{end}}
 
                             {{if ne .CurrentSite "Delivery" }}
                             <li class="nav-item">
-                                <a class="nav-link text-black fs-5" href="/profile/delivery">Delivery Address</a>
+                                <a class="nav-link" href="/profile/delivery" style="font-family: 'Nunito', sans-serif; color: #555;">Delivery</a>
                             </li>
                             {{end}}
 
                             {{if ne .CurrentSite "Cart" }}
                             <li class="nav-item">
-                                <a class="nav-link text-black fs-5" href="/profile/cart">Cart</a>
+                                <a class="nav-link" href="/profile/cart" style="font-family: 'Nunito', sans-serif; color: #555;">Cart</a>
                             </li>
                             {{end}}
-
                         {{end}}
                     {{end}}
                 </ul>
-            </div>
-            {{if .ProfileID }}
-            <div id="profile">
-                <div class="d-flex align-items-center justify-content-center">
-                    {{if ne .CurrentSite "Profile" }}
-                    <a class="nav-link text-black fs-5 mr-3" href="/profile">My Profile</a>
+                <form class="d-flex">
+                    {{if .ProfileID }}
+                    <a class="btn btn-outline-success me-2" href="/profile" style="font-family: 'Nunito', sans-serif;">My Profile</a>
+                    <button class="btn btn-outline-danger" type="button" id="sign_out" style="font-family: 'Nunito', sans-serif;">Sign Out</button>
+                    {{else}}
+                    <a class="btn btn-success" href="/auth/sign_in" style="font-family: 'Nunito', sans-serif; color: white;">Sign In / Register</a>
                     {{end}}
-                    <button id="sign_out" class="btn btn-outline-primary">Sign Out</button>
-                </div>
+                </form>
             </div>
-            {{else}}
-            <div id="sign_in">
-                <a class="btn btn-primary text-white" href="/auth">Sign in/Log in</a>
-            </div>
-            {{end}}
         </div>
     </nav>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const signOutButton = document.getElementById('sign_out');
-            signOutButton.addEventListener('click', function() {
-                logout();
-            });
-        });
-
-        function logout() {
-            document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-            window.location.href = '/';
-        }
-
-    </script>
 </header>
+{{if ne .ProfileID ""}}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const signOutButton = document.getElementById('sign_out');
+        signOutButton.addEventListener('click', function () {
+            logout();
+        });
+    });
+
+    function logout() {
+        document.cookie = 'token=; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        window.location.href = '/';
+    }
+</script>
+{{end}}

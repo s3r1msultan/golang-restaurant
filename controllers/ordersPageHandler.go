@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"final/initializers"
 	"final/middlewares"
 	"final/models"
 	"fmt"
@@ -12,7 +13,7 @@ import (
 func OrdersPageHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id := vars["id"]
-	tmpl := initTemplates()
+	tmpl := initializers.InitTemplates()
 	headData := models.HeadData{
 		HeadTitle: "Orders",
 		StyleName: "Orders",

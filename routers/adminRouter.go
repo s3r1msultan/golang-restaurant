@@ -9,7 +9,7 @@ import (
 func AdminRouter(adminRouter *mux.Router) {
 	adminRouter.StrictSlash(true)
 	adminRouter.HandleFunc("/", controllers.AdminPageHandler)
-	adminRouter.HandleFunc("/send_message", controllers.NofityUsers).Methods(http.MethodPost)
+	adminRouter.HandleFunc("/send_message", controllers.NotifyVerifiedUsers).Methods(http.MethodPost)
 	adminRouter.HandleFunc("/api/users/{id}", controllers.GetUser).Methods(http.MethodGet)
 	adminRouter.HandleFunc("/api/users", controllers.ListUsers).Methods(http.MethodGet)
 	adminRouter.HandleFunc("/api/users", controllers.AddUser).Methods(http.MethodPost)
