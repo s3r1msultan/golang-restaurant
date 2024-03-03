@@ -73,7 +73,6 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 		var existingUser models.User
 		err = usersCollection.FindOne(context.TODO(), bson.M{"email": user.Email}).Decode(&existingUser)
 		if err == nil {
-			initializers.LogError("a user with the email already exists", err, nil)
 			w.WriteHeader(http.StatusConflict)
 			json.NewEncoder(w).Encode(bson.M{"error": "A user with this email already exists", "is_signed_up": false, "exists": true})
 			return
@@ -114,7 +113,6 @@ func SignupHandler(w http.ResponseWriter, r *http.Request) {
 
 		err = SendVerificationEmail(user.FirstName, user.LastName, user.Email, token, r)
 		if err != nil {
-			initializers.LogError("sending verification email", err, nil)
 			w.WriteHeader(http.StatusInternalServerError)
 			json.NewEncoder(w).Encode(bson.M{"error": "Failed to send verification email", "is_signed_up": false, "exists": false})
 			return

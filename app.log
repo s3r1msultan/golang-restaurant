@@ -3546,3 +3546,78 @@ time="2024-03-03T15:53:59+06:00" level=info msg="handled request" duration="758�
 time="2024-03-03T15:54:41+06:00" level=info msg="handled request" duration=2.6353ms method=GET path=/auth/sign_in remoteAddr="127.0.0.1:62442" status=200
 time="2024-03-03T15:54:41+06:00" level=info msg="handled request" duration="108.7µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:62442" status=200
 time="2024-03-03T15:55:43+06:00" level=info msg="handled request" duration=2.5482ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:62442" status=200
+time="2024-03-03T16:47:07+06:00" level=info msg="handled request" duration=3.9852ms method=GET path=/ remoteAddr="127.0.0.1:49504" status=200
+time="2024-03-03T16:47:07+06:00" level=info msg="handled request" duration=113.4996ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:49504" status=200
+time="2024-03-03T16:47:08+06:00" level=info msg="handled request" duration=2.9405ms method=GET path=/auth/sign_in remoteAddr="127.0.0.1:49508" status=200
+time="2024-03-03T16:47:08+06:00" level=info msg="handled request" duration=1.0496ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49508" status=200
+time="2024-03-03T16:47:10+06:00" level=info msg="handled request" duration=4.3816ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49508" status=200
+time="2024-03-03T16:47:32+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:47:32+06:00" level=info msg="handled request" duration=171.3144ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49513" status=409
+time="2024-03-03T16:48:44+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:48:44+06:00" level=info msg="handled request" duration=170.3043ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49513" status=409
+time="2024-03-03T16:49:04+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:49:04+06:00" level=info msg="handled request" duration=171.9298ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49534" status=409
+time="2024-03-03T16:49:07+06:00" level=info msg="handled request" duration=3.2606ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:49:12+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:49:12+06:00" level=info msg="handled request" duration=170.7708ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49534" status=409
+time="2024-03-03T16:49:53+06:00" level=info msg="handled request" duration=2.6199ms method=GET path=/auth/sign_in remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:01+06:00" level=info msg="handled request" duration=278.4993ms method=POST path=/auth/sign_in remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:01+06:00" level=info msg="handled request" duration=0s method=GET path=/admin remoteAddr="127.0.0.1:49534" status=301
+time="2024-03-03T16:50:01+06:00" level=info msg="handled request" duration=3.9474ms method=GET path=/admin/ remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:01+06:00" level=info msg="handled request" duration=104.886ms method=GET path=/static/css/AdminStyle.css remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:02+06:00" level=info msg="handled request" duration=182.7979ms method=GET path=/admin/api/users remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:15+06:00" level=info msg="handled request" duration=4.5505ms method=GET path=/ remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:22+06:00" level=info msg="handled request" duration=2.6229ms method=GET path=/ remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:22+06:00" level=info msg="handled request" duration=2.6666ms method=GET path=/auth/sign_in remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:27+06:00" level=info msg="handled request" duration=3.8538ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49534" status=200
+time="2024-03-03T16:50:41+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:50:41+06:00" level=info msg="handled request" duration=170.5018ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49551" status=409
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration=1.0813ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49551" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49551" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration="215µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49560" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration="520.5µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49559" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration="609.2µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49558" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration="566.1µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49551" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration="798.8µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49562" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration=0s method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49561" status=200
+time="2024-03-03T16:51:54+06:00" level=info msg="handled request" duration=5.7862ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49563" status=200
+time="2024-03-03T16:52:16+06:00" level=info msg="handled request" duration=3.7375ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49581" status=200
+time="2024-03-03T16:52:16+06:00" level=info msg="handled request" duration=101.003ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49581" status=200
+time="2024-03-03T16:52:16+06:00" level=info msg="handled request" duration=97.6044ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49582" status=200
+time="2024-03-03T16:52:18+06:00" level=info msg="handled request" duration="153.2µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49581" status=200
+time="2024-03-03T16:52:25+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:52:25+06:00" level=info msg="handled request" duration=169.093ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49582" status=409
+time="2024-03-03T16:53:15+06:00" level=info msg="handled request" duration=6.5006ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49639" status=200
+time="2024-03-03T16:53:16+06:00" level=info msg="handled request" duration=108.833ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49639" status=200
+time="2024-03-03T16:53:16+06:00" level=info msg="handled request" duration=5.4714ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49638" status=200
+time="2024-03-03T16:53:16+06:00" level=info msg="handled request" duration="785µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49639" status=200
+time="2024-03-03T16:53:32+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:53:32+06:00" level=info msg="handled request" duration=607.131ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49638" status=409
+time="2024-03-03T16:53:43+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:53:43+06:00" level=info msg="handled request" duration=171.8919ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49638" status=409
+time="2024-03-03T16:55:08+06:00" level=error msg="An error occurred" action="a user with the email already exists"
+time="2024-03-03T16:55:18+06:00" level=info msg="handled request" duration=29.0305677s method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49669" status=409
+time="2024-03-03T16:57:43+06:00" level=info msg="handled request" duration=12.9123ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49726" status=200
+time="2024-03-03T16:57:44+06:00" level=info msg="handled request" duration=107.498ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:57:44+06:00" level=info msg="handled request" duration=110.0712ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49726" status=200
+time="2024-03-03T16:57:44+06:00" level=info msg="handled request" duration="861.3µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49726" status=200
+time="2024-03-03T16:58:00+06:00" level=info msg="handled request" duration=218.7547ms method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49727" status=409
+time="2024-03-03T16:58:07+06:00" level=info msg="handled request" duration=14.5277ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:08+06:00" level=info msg="handled request" duration="700.9µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:08+06:00" level=info msg="handled request" duration="918.7µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:08+06:00" level=info msg="handled request" duration="138.5µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:16+06:00" level=info msg="handled request" duration=11.0171ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:16+06:00" level=info msg="handled request" duration=1.038ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:16+06:00" level=info msg="handled request" duration="675.6µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T16:58:17+06:00" level=info msg="handled request" duration=1.049ms method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49727" status=200
+time="2024-03-03T17:02:02+06:00" level=info msg="handled request" duration=3m12.2418957s method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49757" status=500
+time="2024-03-03T17:02:10+06:00" level=info msg="handled request" duration=7.2975ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49801" status=200
+time="2024-03-03T17:02:10+06:00" level=info msg="handled request" duration=115.5725ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49801" status=200
+time="2024-03-03T17:02:10+06:00" level=info msg="handled request" duration="539.8µs" method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49805" status=200
+time="2024-03-03T17:02:11+06:00" level=info msg="handled request" duration="494.9µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49801" status=200
+time="2024-03-03T17:02:15+06:00" level=info msg="handled request" duration=1.5515645s method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49801" status=500
+time="2024-03-03T17:05:53+06:00" level=info msg="handled request" duration=3.2479ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:49867" status=200
+time="2024-03-03T17:05:54+06:00" level=info msg="handled request" duration=111.6121ms method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:49867" status=200
+time="2024-03-03T17:05:54+06:00" level=info msg="handled request" duration=108.9218ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:49868" status=200
+time="2024-03-03T17:05:55+06:00" level=info msg="handled request" duration="430.4µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:49867" status=200
+time="2024-03-03T17:06:13+06:00" level=info msg="handled request" duration=2.0239734s method=POST path=/auth/sign_up remoteAddr="127.0.0.1:49867" status=201
