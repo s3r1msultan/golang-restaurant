@@ -1,8 +1,9 @@
 package initializers
 
 import (
-	log "github.com/sirupsen/logrus"
 	"html/template"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func InitTemplates() *template.Template {
@@ -11,8 +12,8 @@ func InitTemplates() *template.Template {
 	patterns := []string{
 		"./views/blocks/*.html",
 		"./views/pages/*.html",
-		//"../../views/blocks/*.html",
-		//"../../views/pages/*.html",
+		// "../../views/blocks/*.html",
+		// "../../views/pages/*.html",
 		//uncoment this to run the test
 	}
 

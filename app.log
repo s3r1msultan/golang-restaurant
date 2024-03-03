@@ -3537,3 +3537,12 @@ time="2024-03-03T06:35:15+06:00" level=info msg="handled request" duration=0s me
 time="2024-03-03T06:35:21+06:00" level=info msg="handled request" duration=3.4577ms method=GET path=/ remoteAddr="127.0.0.1:56948" status=200
 time="2024-03-03T06:35:23+06:00" level=info msg="handled request" duration=3.3066ms method=GET path=/ remoteAddr="127.0.0.1:56948" status=200
 time="2024-03-03T06:35:24+06:00" level=info msg="handled request" duration=3.2539ms method=GET path=/auth/sign_in remoteAddr="127.0.0.1:56948" status=200
+time="2024-03-03T15:53:13+06:00" level=fatal msg="Failed to parse glob pattern '../../views/blocks/*.html': html/template: pattern matches no files: `../../views/blocks/*.html`"
+time="2024-03-03T15:53:20+06:00" level=fatal msg="Failed to parse glob pattern '../../views/blocks/*.html': html/template: pattern matches no files: `../../views/blocks/*.html`"
+time="2024-03-03T15:53:58+06:00" level=info msg="handled request" duration=3.5391ms method=GET path=/ remoteAddr="127.0.0.1:62442" status=200
+time="2024-03-03T15:53:59+06:00" level=info msg="handled request" duration=99.2938ms method=GET path=/static/css/HomeStyle.css remoteAddr="127.0.0.1:62442" status=200
+time="2024-03-03T15:53:59+06:00" level=info msg="handled request" duration=96.7253ms method=GET path=/static/css/footer.css remoteAddr="127.0.0.1:62443" status=200
+time="2024-03-03T15:53:59+06:00" level=info msg="handled request" duration="758µs" method=GET path=/static/img/favicon.png remoteAddr="127.0.0.1:62442" status=200
+time="2024-03-03T15:54:41+06:00" level=info msg="handled request" duration=2.6353ms method=GET path=/auth/sign_in remoteAddr="127.0.0.1:62442" status=200
+time="2024-03-03T15:54:41+06:00" level=info msg="handled request" duration="108.7µs" method=GET path=/static/css/AuthStyle.css remoteAddr="127.0.0.1:62442" status=200
+time="2024-03-03T15:55:43+06:00" level=info msg="handled request" duration=2.5482ms method=GET path=/auth/sign_up remoteAddr="127.0.0.1:62442" status=200
